@@ -1,0 +1,243 @@
+Premier League
+Arsenal
+AFC Bournemouth
+Burnley
+Chelsea
+Crystal Palace
+Everton
+Hull City
+Leicester City
+Liverpool
+Manchester City
+Manchester United
+Middlesbrough
+Southampton
+Stoke City
+Sunderland
+Swansea City
+Tottenham Hotspur
+Watford
+West Bromwich Albion
+West Ham United
+
+La Liga
+Alavés
+Athletic Bilbao
+Atlético Madrid
+Barcelona
+Celta Vigo
+Deportivo La Coruña
+Eibar
+Espanyol
+Granada
+Las Palmas
+Leganés
+Málaga
+Osasuna
+Real Betis
+Real Madrid
+Real Sociedad
+Sevilla
+Sporting Gijón
+Valencia
+Villarreal
+
+Serie A
+Atalanta
+Bologna
+Cagliari
+Chievo
+Crotone
+Empoli
+Fiorentina
+Genoa
+Internazionale
+Juventus
+Lazio
+Milan
+Napoli
+Palermo
+Pescara
+Roma
+Sampdoria
+Sassuolo
+Torino
+Udinese
+
+Bundesliga
+FC Augsburg
+Bayer Leverkusen
+Bayern Munich
+Borussia Dortmund
+Borussia Mönchengladbach
+Darmstadt 98
+Eintracht Frankfurt
+SC Freiburg
+Hamburger SV
+Hertha BSC
+1899 Hoffenheim
+FC Ingolstadt
+1. FC Köln
+RB Leipzig
+Mainz 05
+Schalke 04
+Werder Bremen
+VfL Wolfsburg
+
+Ligue 1
+Angers
+Bastia
+Bordeaux
+Caen
+Dijon
+Guingamp
+Lille
+Lorient
+Lyon
+Marseille
+Metz
+Monaco
+Montpellier
+Nancy
+Nantes
+Nice
+Paris Saint-Germain
+Rennes
+Saint-Étienne
+Toulouse
+
+MLS
+Atlanta United FC
+Chicago Fire
+Columbus Crew SC
+D.C. United
+Montreal Impact
+New England Revolution
+New York City FC
+New York Red Bulls
+Orlando City SC
+Philadelphia Union
+Toronto FC
+Colorado Rapids
+FC Dallas
+Houston Dynamo
+LA Galaxy
+Minnesota United FC
+Portland Timbers
+Real Salt Lake
+San Jose Earthquakes
+Seattle Sounders FC
+Sporting Kansas City
+Vancouver Whitecaps FC
+
+NFL
+Buffalo Bills
+Miami Dolphins
+New England Patriots
+New York Jets
+Baltimore Ravens
+Cincinnati Bengals
+Cleveland Browns
+Pittsburgh Steelers
+Houston Texans
+Indianapolis Colts
+Jacksonville Jaguars
+Tennessee Titans
+Denver Broncos
+Kansas City Chiefs
+Los Angeles Chargers
+Oakland Raiders
+Dallas Cowboys
+New York Giants
+Philadelphia Eagles
+Washington Redskins
+Chicago Bears
+Detroit Lions
+Green Bay Packers
+Minnesota Vikings
+Atlanta Falcons
+Carolina Panthers
+New Orleans Saints
+Tampa Bay Buccaneers
+Arizona Cardinals
+Los Angeles Rams
+San Francisco 49ers
+Seattle Seahawks
+
+MLB
+Baltimore Orioles
+Boston Red Sox
+New York Yankees
+Tampa Bay Rays
+Toronto Blue Jays
+Chicago White Sox
+Cleveland Indians
+Detroit Tigers
+Kansas City Royals
+Minnesota Twins
+Houston Astros
+Los Angeles Angels of Anaheim
+Oakland Athletics
+Seattle Mariners
+Texas Rangers
+Atlanta Braves
+Miami Marlins
+New York Mets
+Philadelphia Phillies
+Washington Nationals
+Chicago Cubs
+Cincinnati Reds
+Milwaukee Brewers
+Pittsburgh Pirates
+St. Louis Cardinals
+Arizona Diamondbacks
+Colorado Rockies
+Los Angeles Dodgers
+San Diego Padres
+San Francisco Giants
+
+NPB
+Chunichi Dragons
+Hanshin Tigers
+Hiroshima Toyo Carp
+Tokyo Yakult Swallows
+Yokohama DeNA BayStars
+Yomiuri Giants
+Chiba Lotte Marines
+Fukuoka SoftBank Hawks
+Hokkaido Nippon-Ham Fighters
+Orix Buffaloes
+Saitama Seibu Lions
+Tohoku Rakuten Golden Eagles
+
+NBA
+Atlanta Hawks
+Boston Celtics
+Brooklyn Nets
+Charlotte Hornets
+Chicago Bulls
+Cleveland Cavaliers
+Dallas Mavericks
+Denver Nuggets
+Detroit Pistons
+Golden State Warriors
+Houston Rockets
+Indiana Pacers
+LA Clippers
+Los Angeles Lakers
+Memphis Grizzlies
+Miami Heat
+Milwaukee Bucks
+Minnesota Timberwolves
+New Orleans Pelicans
+New York Knicks
+Oklahoma City Thunder
+Orlando Magic
+Philadelphia 76ers
+Phoenix Suns
+Portland Trail Blazers
+Sacramento Kings
+San Antonio Spurs
+Toronto Raptors
+Utah Jazz
+Washington Wizards
