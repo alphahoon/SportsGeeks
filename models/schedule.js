@@ -3,10 +3,12 @@ var Schema = mongoose.Schema;
 
 var scheduleSchema = new Schema({
     leagueName: String,
-    teamName: String,
+    team1Name: String,
+    team2Name: String,
     team1score: Number,
     team2score: Number,
-    match_date: { type: Date, default: Date.now  }
+    date: String,
+    time: String
 });
 
 module.exports = mongoose.model('schedule', scheduleSchema);
