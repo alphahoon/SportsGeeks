@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const session = require('cookie-session');
 const bodyParser = require('body-parser');
 const queryString = require('querystring');
+const mongo = require('mongodb');
 const monk = require('monk');
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -89,16 +90,50 @@ var trends = require('./routes/trends');
 var register = require('./routes/register');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
+var deleteAccount = require('./routes/delete-account');
 
 app.use('/', main);
 app.use('/main', main);
+app.use('/register', register);
+app.use('/login', login);
+app.use('/logout', logout);
+
+// token authentication
+app.use((req, res, next) => {
+    var queryObj = req.app.get('queryObj');
+    var json = {};
+    if (queryObj.token == undefined) {
+        var msg = 'token not provided.';
+        console.log(msg.red);
+        json.status = 'ERROR';
+        json.description = msg;
+        res.json(json);
+    } else {
+        var accounts = db.get('accounts');
+        var objId = new mongo.ObjectId(queryObj.token.toString());
+        accounts.findOne({
+                _id: objId
+            })
+            .then((account) => {
+                app.set('objId', objId)
+                next();
+            })
+            .catch((err) => {
+                var msg = 'token not valid.';
+                console.log(msg.red);
+                json.status = 'ERROR';
+                json.description = msg;
+                res.json(json);
+            });
+    }
+});
+
+// Needs token authentication
 app.use('/calendar', calendar);
 app.use('/standings', standings);
 app.use('/news', news);
 app.use('/trends', trends);
-app.use('/register', register);
-app.use('/login', login);
-app.use('/logout', logout);
+app.use('/delete-account', deleteAccount);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
