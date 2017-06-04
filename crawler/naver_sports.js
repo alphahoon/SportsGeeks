@@ -25,5 +25,5 @@ db.once('open', function () {
 			console.log("Error: " + error);
 		}
 		console.log("Status code: " + response.statusCode);
-	}
+	});
 });
