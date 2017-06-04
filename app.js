@@ -57,11 +57,14 @@ db.then(() => {
 app.use((req, res, next) => {
     // query
     console.log(`\n${req.path}`.green);
-    console.log(req.body.yellow);
+    var bodyObj = req.body;
+    var bodyObjtoStr = JSON.stringify(bodyObj, null, 2);
     var queryStr = queryString.stringify(req.query, null, null);
     var queryObj = queryString.parse(queryStr);
     var queryObjtoStr = JSON.stringify(queryObj, null, 2);
+    app.set('bodyObj', bodyObj);
     app.set('queryObj', queryObj);
+    console.log(`body = ${bodyObjtoStr}`.yellow);
     console.log(`query = ${queryObjtoStr}`.yellow);
 
     var json = {};
