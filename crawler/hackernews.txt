@@ -1,0 +1,58 @@
+Isro’s new GSLV Mk III rocket places GSAT-19 communication satellite in orbit
+http://m.timesofindia.com/india/isros-most-powerful-rocket-gslv-mk-iii-places-gsat-19-communication-satellite-in-orbit/articleshow/59001591.cms
+Manualslib – Database of More Than 2.6M Manuals
+https://www.manualslib.com/
+Apple Teases Upcoming Space Gray iMac Pro, "the most powerful Mac ever"
+https://9to5mac.com/2017/06/05/apple-teases-upcoming-space-gray-imac-pro-the-most-powerful-mac-ever/
+Crispr’s Next Big Debate: How Messy Is Too Messy?
+https://www.wired.com/2017/06/crispr-mutations/
+Google’s Environmental Report
+https://environment.google/
+Apple Announces MacOS High Sierra
+https://techcrunch.com/2017/06/05/apple-announces-macos-high-sierra/
+Optimizations which made Python 3.6 faster than Python 3.5 [video]
+http://pyvideo.org/pycon-us-2017/optimizations-which-made-python-36-faster-than-python-35.html
+Supreme Court to Hear Case on Cellphone Location Data
+https://www.wsj.com/articles/supreme-court-to-hear-case-on-cellphone-location-data-1496671579
+The meeting that showed me the truth about VCs
+https://techcrunch.com/2017/06/01/the-meeting-that-showed-me-the-truth-about-vcs/
+Linux Container Internals
+http://rabbitstack.github.io/operating%20systems/linux-containers-internals-part-i/
+A peek under Bitcoin’s hood: Writing a client that can create a transaction
+http://www.samlewis.me/2017/06/a-peek-under-bitcoins-hood/
+A Very Powerful Study That Confirms the Lead-Crime Hypothesis
+http://www.motherjones.com/kevin-drum/2017/06/powerful-study-lead-crime-hypothesis
+Yelp: Making Photos Smaller Without Quality Loss
+https://engineeringblog.yelp.com/2017/06/making-photos-smaller.html
+Ask HN: What language-agnostic programming books should I read?
+item?id=14486657
+How to Learn Solidity: The Ultimate Ethereum Coding Guide
+https://blockgeeks.com/guides/how-to-learn-solidity/
+Nasa Aeronautics Book Series (2015)
+https://www.nasa.gov/connect/ebooks/unlimited_horizons_detail.html
+Weekly links to help you become a better developer
+https://betterdev.link
+Apple TV will receive Amazon Prime Video “later this year”
+https://arstechnica.com/gadgets/2017/06/apple-tv-will-receive-amazon-prime-later-this-year/
+You can probably use deep learning even if you don't have a lot of data
+http://beamandrew.github.io/deeplearning/2017/06/04/deep_learning_works.html
+How to Make Homemade Bitters
+http://www.thekitchn.com/how-to-make-homemade-bitters-cooking-lessons-from-the-kitchn-197883
+Android: NXP i.MX6 buffer modifier support added to gbm_gralloc and Mesa
+https://www.collabora.com/news-and-blog/blog/2017/06/05/android-nxp-imx6-buffer-modifier-support/
+MacOS High Sierra: A Refined, Polished Version of Sierra UK
+https://arstechnica.co.uk/apple/2017/06/macos-high-sierra/
+First Private Moon Landing Gears Up for Launch by Year's End
+http://www.popularmechanics.com/space/moon-mars/a26702/moon-express-lunar-landing-launch-years-end/
+Ask HN: What code samples should programmers read?
+item?id=14486099
+Standing up for cinema
+http://www.the-tls.co.uk/articles/public/film-making-martin-scorsese/
+The Journey to Hijacking a Country’s TLD – The Hidden Risks of Domain Extensions
+https://thehackerblog.com/the-journey-to-hijacking-a-countrys-tld-the-hidden-risks-of-domain-extensions/index.html
+Apple announces iMac Pro with up to 18-core processor and 5K display for $4,999
+https://www.theverge.com/2017/6/5/15741540/apple-imac-pro-announced-price-specs-release-date-wwdc-2017
+Apple Events – WWDC Keynote, June 2017 [video]
+https://www.apple.com/apple-events/june-2017/
+Twitch live stream: Multiplayer stock trading game using real money
+https://www.twitch.tv/stockstream

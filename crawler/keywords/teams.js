@@ -2,7 +2,7 @@ const teams = [{
         "id": "ManUtd",
         "type": "team",
         "name": {
-            "en": "Manchester United FC",
+            "en": "Manchester United",
             "kr": "맨체스터 유나이티드"
         },
         "alias": {

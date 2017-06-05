@@ -19,6 +19,7 @@
     "express": "~4.15.2",
     "express-session": "^1.15.3",
     "google-trends-api": "^4.1.0",
+    "iconv": "^2.2.3",
     "moment": "^2.18.1",
     "mongoose": "^4.9.7",
     "monk": "^5.0.2",
