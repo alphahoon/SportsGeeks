@@ -42,20 +42,17 @@ function Crawl_Naver(keyword) {
 }
 
 console.log("ready to connect mongoose");
-var key = "맨체스터 유나이티드";
-console.log(encodeURI(key, "euc-kr"));
+//var key = "맨체스터 유나이티드";
+//console.log(encodeURI(key, "euc-kr"));
 //console.log(encodeURI(decodeURI(key, "euc-kr")));
 //Crawl_Naver(encodeURI(encodeURIComponent(key)));
-//mongoose.connect('mongodb://localhost:27017/main');
-//var db = mongoose.connection;
-//db.on('error', console.error.bind(console, 'connection error:'));
-//db.once('open', function () {
-//    console.log("Successfully connect mongoose!");
-	//keyword = [];
-	// for team in teams {
-	// 	en_fullname = team.name.en;
-	// 	en_alias = team.alias.en;
-	// 	kr_fullname = team.name.kr;
-	// 	kr_alias = team.alias.kr;
-	// }
-//});
+mongoose.connect('mongodb://localhost:27017/main');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+    console.log("Successfully connect mongoose!");
+
+    console.log(db.teams);
+
+    db.close();
+});
