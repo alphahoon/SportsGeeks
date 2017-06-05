@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 var googleTrends = require('google-trends-api');
+var moment = require('moment');
 var async = require('async');
 var fs = require('fs');
 
@@ -9,15 +10,21 @@ getTrendsWrapper();
 
 function getTrendsWrapper() {
     console.log('Starting collecting trends...');
-    var today = new Date();
-    var startDate = new Date().setDate(today.getDate() - 1);
-    var startTime = new Date(startDate);
-    var endTime = new Date(Date.now());
+    var now = moment();
+    var startTime = now.add(-7, 'hour')
+        .toDate();
+    var endTime = now.add(-1, 'hour')
+        .toDate();
 
     var keywords = [];
-    var keywords_input = fs.readFileSync('./keywords.txt', 'utf8').split('\n').filter(Boolean);
+    var keywords_input = fs.readFileSync('./keywords.txt', 'utf8')
+        .split('\n')
+        .filter(Boolean);
     for (var index = 0; index < keywords_input.length; index++) {
-        keywords.push({ name: keywords_input[index], trendsVal: 0 });
+        keywords.push({
+            name: keywords_input[index],
+            trendsVal: 0
+        });
     }
     //console.log(keywords);
     var ref = keywords[0].name;
@@ -30,12 +37,15 @@ function getTrends(ref, keywords, begin, end, startTime, endTime, callback) {
         five_keywords.push(keywords[index].name);
     }
     console.log('Processing: [' + five_keywords + ']... (' + (keywords.length - end - 1) + ' left)');
-    googleTrends.interestOverTime({keyword: five_keywords, startTime: startTime, endTime: endTime}, function (err, results) {
+    googleTrends.interestOverTime({
+        keyword: five_keywords,
+        startTime: startTime,
+        endTime: endTime
+    }, function (err, results) {
         if (err) {
             console.error('there was an error!', err);
             console.log(results);
-        }
-        else {
+        } else {
             //console.log(results);
             var averages = JSON.parse(results)['default'].averages;
             var averages_index = 1;
@@ -45,8 +55,7 @@ function getTrends(ref, keywords, begin, end, startTime, endTime, callback) {
                     keywords[index].trendsVal = averages[averages_index];
                     averages_index++;
                 }
-            }
-            else {
+            } else {
                 var multiply = keywords[0].trendsVal / averages[0];
                 for (var index = begin; index <= end; index++) {
                     keywords[index].trendsVal = averages[averages_index] * multiply;
@@ -57,7 +66,7 @@ function getTrends(ref, keywords, begin, end, startTime, endTime, callback) {
             //console.log(begin, end);
             //console.log(averages);
             //console.log(keywords);
- 
+
             var keywords_end = keywords.length - 1;
             var remains = keywords_end - end;
             if (remains >= 4) {
@@ -107,12 +116,14 @@ function storeKeywords(keywords) {
     db.once('open', function () {
         console.log('mongodb connected!');
 
-        db.db.listCollections({name: 'trends'})
+        db.db.listCollections({
+                name: 'trends'
+            })
             .next((err, collinfo) => {
                 if (err) console.log(err);
                 if (collinfo)
                     db.db.dropCollection('trends');
-                
+
                 var Trends = require('./models/trends.js');
                 var objArr = [];
                 for (var index = 0; index < keywords.length; index++) {
@@ -123,24 +134,22 @@ function storeKeywords(keywords) {
                     }));
                 }
                 console.log('Storing trends into mongodb');
-                async.each(objArr, function(object, callback) {
-                    object.save(function(err){
-                        if(err) { 
+                async.each(objArr, function (object, callback) {
+                    object.save(function (err) {
+                        if (err) {
                             callback(err)
-                        }
-                        else { 
-                            callback() 
+                        } else {
+                            callback()
                         }
                     });
-                }, function (err){
-                    if(err) { 
+                }, function (err) {
+                    if (err) {
                         console.log(err);
                         db.close();
-                    } 
-                    else {
+                    } else {
                         console.log('Updating trends completed!');
                         db.close();
-                        var elapsedTime = (Date.now() - timestamp)/1000;
+                        var elapsedTime = (Date.now() - timestamp) / 1000;
                         console.log('Time elpased = ' + elapsedTime + ' sec');
                     }
                 });

@@ -1,6 +1,7 @@
 const express = require('express');
 const passport = require('passport');
 const Account = require('../models/account');
+const moment = require('moment');
 const router = express.Router();
 
 router.post('/', (req, res, next) => {
@@ -9,7 +10,9 @@ router.post('/', (req, res, next) => {
         username: req.body.username,
         email: req.body.email,
         utcOffset: req.body.utcOffset,
-        language: req.body.language
+        language: req.body.language,
+        date: moment()
+            .utcOffset(0)
     }), req.body.password, function (err) {
         var json = {};
         if (err) {
