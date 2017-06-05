@@ -93,6 +93,7 @@ var trends = require('./routes/trends');
 var register = require('./routes/register');
 var login = require('./routes/login');
 var logout = require('./routes/logout');
+var settings = require('./routes/settings');
 var deleteAccount = require('./routes/delete-account');
 
 app.use('/', main);
@@ -136,6 +137,7 @@ app.use('/calendar', calendar);
 app.use('/standings', standings);
 app.use('/news', news);
 app.use('/trends', trends);
+app.use('/settings', settings);
 app.use('/delete-account', deleteAccount);
 
 // catch 404 and forward to error handler
