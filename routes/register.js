@@ -6,7 +6,10 @@ const router = express.Router();
 router.post('/', (req, res, next) => {
     console.log('Registering user...'.blue);
     Account.register(new Account({
-        username: req.body.username
+        username: req.body.username,
+        email: req.body.email,
+        utcOffset: req.body.utcOffset,
+        language: req.body.language
     }), req.body.password, function (err) {
         var json = {};
         if (err) {

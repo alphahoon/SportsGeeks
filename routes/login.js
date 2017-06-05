@@ -16,6 +16,9 @@ router.post('/', passport.authenticate('local'), (req, res) => {
     json.status = 'OK';
     json.username = req.user.username;
     json.token = req.user._id;
+    json.email = req.user.email;
+    json.utcOffset = req.user.utcOffset;
+    json.language = req.user.language;
     res.json(json);
 });
 
