@@ -1,9 +1,11 @@
-var mongoClient = require('mongodb').MongoClient;
+var monk = require('monk');
 var request = require('request');
 var cheerio = require('cheerio');
+var moment = require('moment');
 
 var URL_query = "https://news.search.yahoo.com/search?p=";
 var src = "Yahoo";
+var Time_Type = ['second', 'minute', 'hour', 'day', 'month', 'year'];
 
 function Crawl_Yahoo(keyword) {
 	request(URL_query + keyword, function(error, response, body) {
@@ -16,19 +18,41 @@ function Crawl_Yahoo(keyword) {
         var $ = cheerio.load(body);
 
         $('div.NewsArticle > div.layoutCenter').each(function(index) {
-            //var title_a = $(this).find('div.ct > a.tit');
             var title = $(this).find('div.compTitle > h3.title > ').text().trim();
-            //var url = title_a.attr('href').trim();
             var summary = $(this).find('div.compText > p').text().trim();
+            var timeString = $(this).find('div.compTitle > div > span.tri').text().trim();
             var url = $(this).find('div.compTitle > h3.title > ').attr('href').trim();
+
+            var time = "";
 
             if (summary.length > 40) {
                 summary = summary.substring(0, 40);
             }
 
-            console.log(index)
+            for(var i = 0; i < Time_Type.length; i++) {
+                var timeIndex = timeString.indexOf(Time_Type[i]);
+
+                if(timeIndex != -1) {
+                    if(i == 0) {
+                        timeString = 0;
+                    }
+                    else {
+                        timeString = timeString.substring(0, timeIndex).trim();
+                        time = moment().add(-1 * timeString, Time_Type[i] + 's').utcOffset(0).toISOString();
+                    }
+
+                    break;
+                }
+            }
+
+            if (time == "") {
+                time = moment(timeString.replace('.', '-') + ' 21:00:00.000').utcOffset(0).toISOString();
+            }
+
+            console.log(src)
             console.log(title);
             console.log(summary);
+            console.log(time);
             console.log(url);
 	    });
     });
@@ -39,6 +63,7 @@ var key = 'Manchester Utd';
 
 Crawl_Yahoo(key.replace(/ /gi, '+'));
 
+monk
 mongoClient.connect('mongodb://localhost:27017/main', function(err, db) {
     if(err) {
         console.log(err);

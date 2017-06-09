@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 var request = require('request');
 var cheerio = require('cheerio');
+var moment = require('moment');
 
 var URL_query = "http://search.espn.com/results?dims=5&dateFilter=GO&searchString=";
 var src = "ESPN";
@@ -17,19 +18,25 @@ function Crawl_ESPN(keyword) {
         var $ = cheerio.load(body);
 
         $('li.result').each(function(index) {
-            //var title_a = $(this).find('div.ct > a.tit');
             var title = $(this).find('h3 > a').text().trim();
-            //var url = title_a.attr('href').trim();
             var summary = $(this).find('div > p').text().trim();
+            var timeString = $(this).find('div > span').text().trim();
             var url = $(this).find('h3 > a').attr('href').trim();
+
+            var lastBarIndex = timeString.lastIndexOf('|');
+            timeString = timeString.substring(lastBarIndex + 2, timeString.length);
+
+            var time = moment(timeString + ' 21:00:00', 'MMMM DD, YYYY HH:mm:ss').utcOffset(0).toISOString();
+
 
             if (summary.length > 40) {
                 summary = summary.substring(0, 40);
             }
 
-            console.log(index)
+            console.log(src)
             console.log(title);
             console.log(summary);
+            console.log(time);
             console.log(url);
 	    });
     });
