@@ -1,5 +1,5 @@
 const teams = [
-        //K-League
+    //K-League
     {
         "id": "FCSeoul",
         "type": "team",
@@ -11,8 +11,8 @@ const teams = [
             "en": "FC Seoul",
             "kr": "FC 서울"
         },
-        "img: ""
-    }, 
+        "img": ""
+    },
     {
         "id": "JeonbukFC",
         "type": "team",
@@ -24,7 +24,7 @@ const teams = [
             "en": "Jeobuk FC",
             "kr": "전북 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "JejuUtd",
@@ -37,7 +37,7 @@ const teams = [
             "en": "Jeju Utd",
             "kr": "제주"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "UlsanFC",
@@ -50,7 +50,7 @@ const teams = [
             "en": "Ulsan FC",
             "kr": "울산 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "JeonnamFC",
@@ -63,7 +63,7 @@ const teams = [
             "en": "Jeonnam Dragons",
             "kr": "전남 드래곤즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SangjuFC",
@@ -76,7 +76,7 @@ const teams = [
             "en": "Sangju FC",
             "kr": "상주 상무"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SuwonBluewings",
@@ -89,7 +89,7 @@ const teams = [
             "en": "Suwon Bluewings",
             "kr": "수원 블루윙즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "GwangjuFC",
@@ -102,7 +102,7 @@ const teams = [
             "en": "Gwangju FC",
             "kr": "광주 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "PohangSteelers",
@@ -115,7 +115,7 @@ const teams = [
             "en": "Pohang Steelers",
             "kr": "포항 스틸러스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "IncheonUtd",
@@ -128,7 +128,7 @@ const teams = [
             "en": "Incheon Utd",
             "kr": "인천 유나이티드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "DaeguFC",
@@ -141,7 +141,7 @@ const teams = [
             "en": "Daegu FC",
             "kr": "대구 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "GangwonFC",
@@ -154,7 +154,7 @@ const teams = [
             "en": "Gangwon FC",
             "kr": "강원 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SeongnamFC",
@@ -167,7 +167,7 @@ const teams = [
             "en": "Seongnam FC",
             "kr": "성남 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SuwonFC",
@@ -180,7 +180,7 @@ const teams = [
             "en": "Suwon FC",
             "kr": "수원 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "BuchoenFC",
@@ -193,7 +193,7 @@ const teams = [
             "en": "Bucheon FC",
             "kr": "부천 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "BusanIPark",
@@ -206,7 +206,7 @@ const teams = [
             "en": "Busan I-Park",
             "kr": "부산 아이파크"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SeoulEland",
@@ -219,7 +219,7 @@ const teams = [
             "en": "Seoul E-Land",
             "kr": "서울 이랜드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "DaejeonCitizen"
@@ -232,7 +232,7 @@ const teams = [
             "en": "Daejeon Citizen",
             "kr": "대전 시티즌"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "GyeongnamFC",
@@ -245,7 +245,7 @@ const teams = [
             "en": "Gyeongnam FC",
             "kr": "경남 FC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "FCAnyang",
@@ -258,7 +258,7 @@ const teams = [
             "en": "FC Anyang",
             "kr": "FC 안양"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "AnsanGreeners",
@@ -271,7 +271,7 @@ const teams = [
             "en": "Ansan Greeners",
             "kr": "안산 그리너스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "AsanMugunghwa",
@@ -284,10 +284,10 @@ const teams = [
             "en": "Asan Mugunghwa",
             "kr": "아산 무궁화"
         }
-        "img: ""
+        "img": ""
     },
-    
-    // Premier League 
+
+    // Premier League
     {
         "id": "Arsenal",
         "type": "team",
@@ -299,7 +299,7 @@ const teams = [
             "en": "Arsenal",
             "kr": "아스널"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "AFCBournemouth",
@@ -312,7 +312,7 @@ const teams = [
             "en": "Bournemouth",
             "kr": "본머스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Burnley",
@@ -325,8 +325,8 @@ const teams = [
             "en": "Burnley",
             "kr": "번리"
         }
-        "img: ""
-    }, 
+        "img": ""
+    },
     {
         "id": "Chelsea",
         "type": "team",
@@ -338,8 +338,8 @@ const teams = [
             "en": "Chelsea",
             "kr": "첼시"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "CrystalPalace",
         "type": "team",
@@ -351,8 +351,8 @@ const teams = [
             "en": "Crystal Palace",
             "kr": "크리스탈 팰리스"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Everton",
         "type": "team",
@@ -364,8 +364,8 @@ const teams = [
             "en": "Everton",
             "kr": "에버턴"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "HullCity",
         "type": "team",
@@ -377,8 +377,8 @@ const teams = [
             "en": "Hull City",
             "kr": "헐 시티"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "LeicesterCity",
         "type": "team",
@@ -390,8 +390,8 @@ const teams = [
             "en": "Leicester City",
             "kr": "레스터 시티"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Liverpool",
         "type": "team",
@@ -403,8 +403,8 @@ const teams = [
             "en": "Liverpool",
             "kr": "리버풀"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "ManCity",
         "type": "team",
@@ -416,8 +416,8 @@ const teams = [
             "en": "Man City",
             "kr": "맨시티"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "ManUtd",
         "type": "team",
@@ -429,8 +429,8 @@ const teams = [
             "en": "Man Utd",
             "kr": "맨유"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Middlesbrough",
         "type": "team",
@@ -442,8 +442,8 @@ const teams = [
             "en": "Middlesbrough",
             "kr": "미들스브러"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Southampton",
         "type": "team",
@@ -455,8 +455,8 @@ const teams = [
             "en": "Southampton",
             "kr": "사우샘프턴"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "StokeCity",
         "type": "team",
@@ -468,8 +468,8 @@ const teams = [
             "en": "Stoke City",
             "kr": "스토크 시티"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Sunderland",
         "type": "team",
@@ -481,8 +481,8 @@ const teams = [
             "en": "Sunderland",
             "kr": "선덜랜드"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "SwanseaCity",
         "type": "team",
@@ -494,8 +494,8 @@ const teams = [
             "en": "Swansea City",
             "kr": "스완지 시티"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Tottenham",
         "type": "team",
@@ -507,8 +507,8 @@ const teams = [
             "en": "Toteenham",
             "kr": "토트넘"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "Watford",
         "type": "team",
@@ -520,8 +520,8 @@ const teams = [
             "en": "Watford",
             "kr": "왓퍼드"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "WestBrom",
         "type": "team",
@@ -533,8 +533,8 @@ const teams = [
             "en": "West Brom",
             "kr": "웨스트 브로미치"
         }
-        "img: ""
-    },   
+        "img": ""
+    },
     {
         "id": "WestHam",
         "type": "team",
@@ -546,7 +546,7 @@ const teams = [
             "en": "West Ham",
             "kr": "웨스트햄"
         }
-        "img: ""
+        "img": ""
     },
 
     // La Liga
@@ -556,12 +556,12 @@ const teams = [
         "name": {
             "en": "Deportivo Alaves",
             "kr": "데포르티보 알라베스"
-       },
+        },
         "alias": {
             "en": "Alaves",
             "kr": "알라베스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Athletic",
@@ -574,7 +574,7 @@ const teams = [
             "en": "Athletic",
             "kr": "아틀레틱"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Atletico",
@@ -587,7 +587,7 @@ const teams = [
             "en": "Atletico",
             "kr": "아틀레티코"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Celta",
@@ -600,7 +600,7 @@ const teams = [
             "en": "Celta",
             "kr": "셀타"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Deportivo",
@@ -613,7 +613,7 @@ const teams = [
             "en": "Deportivo",
             "kr": "데포르티보"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Eibar",
@@ -626,7 +626,7 @@ const teams = [
             "en": "Eibar",
             "kr": "에이바르"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Espanyol",
@@ -639,7 +639,7 @@ const teams = [
             "en": "Espanyol",
             "kr": "에스파뇰"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Barcelona",
@@ -652,7 +652,7 @@ const teams = [
             "en": "Barcelona",
             "kr": "바르셀로나"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Granada",
@@ -665,7 +665,7 @@ const teams = [
             "en": "Granada",
             "kr": "그라나다"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "LasPalmas",
@@ -678,7 +678,7 @@ const teams = [
             "en": "Las Palmas",
             "kr": "라스팔마스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Leganes",
@@ -691,7 +691,7 @@ const teams = [
             "en": "Leganes",
             "kr": "레가네스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Malaga",
@@ -704,7 +704,7 @@ const teams = [
             "en": "Malaga",
             "kr": "말라가"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Osasuna",
@@ -717,7 +717,7 @@ const teams = [
             "en": "Osasuna",
             "kr": "오사스나"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Betis",
@@ -730,7 +730,7 @@ const teams = [
             "en": "R. Betis",
             "kr": "베티스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Madrid",
@@ -743,7 +743,7 @@ const teams = [
             "en": "R. Madrid",
             "kr": "마드리드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Sociedad",
@@ -756,7 +756,7 @@ const teams = [
             "en": "Sociedad",
             "kr": "소시에다드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Sevilla FC",
@@ -769,7 +769,7 @@ const teams = [
             "en": "Sevilla",
             "kr": "세빌라"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Sporting",
@@ -782,7 +782,7 @@ const teams = [
             "en": "Sporting Gijon",
             "kr": "스포르팅"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Valencia",
@@ -795,7 +795,7 @@ const teams = [
             "en": "Valencia",
             "kr": "발렌시아"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Villarreal",
@@ -808,7 +808,7 @@ const teams = [
             "en": "Villarreal",
             "kr": "비야레알"
         }
-        "img: ""
+        "img": ""
     },
 
     // Serie A
@@ -823,7 +823,7 @@ const teams = [
             "en": "Atalanta",
             "kr": "아탈란타"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Bologna",
@@ -836,7 +836,7 @@ const teams = [
             "en": "Bologna",
             "kr": "볼로냐"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Cagliari",
@@ -849,7 +849,7 @@ const teams = [
             "en": "Cagliari",
             "kr": "칼리아리"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Chievo",
@@ -862,7 +862,7 @@ const teams = [
             "en": "Chievo",
             "kr": "키에보"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Crotone",
@@ -875,7 +875,7 @@ const teams = [
             "en": "Crotone",
             "kr": "크로토네"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Empoli",
@@ -888,7 +888,7 @@ const teams = [
             "en": "Empoli",
             "kr": "엠폴리"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Fiorentina",
@@ -901,7 +901,7 @@ const teams = [
             "en": "Fiorentina",
             "kr": "피오렌티나"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Genoa",
@@ -914,7 +914,7 @@ const teams = [
             "en": "Genoa",
             "kr": "제노아"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Inter",
@@ -927,7 +927,7 @@ const teams = [
             "en": "FC Inter",
             "kr": "인테르나치오날레"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Juventus",
@@ -940,7 +940,7 @@ const teams = [
             "en": "Juventus",
             "kr": "유벤투스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Lazio",
@@ -953,7 +953,7 @@ const teams = [
             "en": "Lazio",
             "kr": "라치오"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Milan",
@@ -966,7 +966,7 @@ const teams = [
             "en": "Milan",
             "kr": "밀란"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Napoli",
@@ -979,7 +979,7 @@ const teams = [
             "en": "Napoli",
             "kr": "나폴리"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Palermo",
@@ -992,7 +992,7 @@ const teams = [
             "en": "Palermo",
             "kr": "팔레르모"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Pescara",
@@ -1005,7 +1005,7 @@ const teams = [
             "en": "Pescara",
             "kr": "페스카라"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Roma",
@@ -1018,7 +1018,7 @@ const teams = [
             "en": "Roma",
             "kr": "로마"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Sampdoria",
@@ -1031,7 +1031,7 @@ const teams = [
             "en": "Sampdoria",
             "kr": "삼프도리아"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Sasuuolo",
@@ -1044,7 +1044,7 @@ const teams = [
             "en": "Sassuolo Calcio",
             "kr": "사수올로"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Torino",
@@ -1057,7 +1057,7 @@ const teams = [
             "en": "Torino",
             "kr": "토리노"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Udinese",
@@ -1070,7 +1070,7 @@ const teams = [
             "en": "Udinese",
             "kr": "우디네세"
         }
-        "img: ""
+        "img": ""
     },
 
     // Bundesliga
@@ -1085,7 +1085,7 @@ const teams = [
             "en": "Leverkuzen",
             "kr": "레버쿠젠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Dortmund",
@@ -1098,7 +1098,7 @@ const teams = [
             "en": "Dortmund",
             "kr": "도르트문트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Monchengladbach",
@@ -1111,7 +1111,7 @@ const teams = [
             "en": "Monchengladbach",
             "kr": "뮌헨글라트바흐"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Frankfurt",
@@ -1124,7 +1124,7 @@ const teams = [
             "en": "Frankfurt",
             "kr": "프랑크푸르트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Augsburg",
@@ -1137,7 +1137,7 @@ const teams = [
             "en": "Augsburg",
             "kr": "아우크스부르크"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Bayern",
@@ -1150,7 +1150,7 @@ const teams = [
             "en": "Bayern Munchen",
             "kr": "바이에른 뮌헨"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Ingolstadt",
@@ -1163,7 +1163,7 @@ const teams = [
             "en": "Ingolstadt",
             "kr": "잉골슈타트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Schalke",
@@ -1176,7 +1176,7 @@ const teams = [
             "en": "Schalke",
             "kr": "샬케"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hamburger",
@@ -1189,7 +1189,7 @@ const teams = [
             "en": "Hamburger",
             "kr": "함부르크"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hertha",
@@ -1202,7 +1202,7 @@ const teams = [
             "en": "Hertha",
             "kr": "헤르타"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Leipzig",
@@ -1215,7 +1215,7 @@ const teams = [
             "en": "Leipzig",
             "kr": "라이프치히"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Freiburg",
@@ -1228,7 +1228,7 @@ const teams = [
             "en": "Freiburg",
             "kr": "프라이부르크"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Darmstadt",
@@ -1241,7 +1241,7 @@ const teams = [
             "en": "Darmstadt 98",
             "kr": "다름슈타트 98"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Bremen",
@@ -1254,7 +1254,7 @@ const teams = [
             "en": "Bremen",
             "kr": "브레멘"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hoffenheim",
@@ -1267,7 +1267,7 @@ const teams = [
             "en": "Hoffenheim",
             "kr": "호펜하임"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Wolfsburg",
@@ -1280,7 +1280,7 @@ const teams = [
             "en": "Wolfsburg",
             "kr": "볼프스부르크"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Koln",
@@ -1293,7 +1293,7 @@ const teams = [
             "en": "Koln",
             "kr": "쾰른"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Mainz",
@@ -1306,10 +1306,8 @@ const teams = [
             "en": "Mainz",
             "kr": "마인츠"
         }
-        "img: ""
+        "img": ""
     },
-
-
 
     // -------------------BASEBALL-------------------
     // KBO
@@ -1324,7 +1322,7 @@ const teams = [
             "en": "Doosan",
             "kr": "두산"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "NC",
@@ -1337,7 +1335,7 @@ const teams = [
             "en": "NC",
             "kr": "NC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Nexen",
@@ -1350,7 +1348,7 @@ const teams = [
             "en": "Nexen",
             "kr": "넥센"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "LG",
@@ -1363,7 +1361,7 @@ const teams = [
             "en": "LG",
             "kr": "LG"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "KIA",
@@ -1376,7 +1374,7 @@ const teams = [
             "en": "KIA",
             "kr": "기아"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SK",
@@ -1389,7 +1387,7 @@ const teams = [
             "en": "SK",
             "kr": "SK"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hanhwa",
@@ -1402,7 +1400,7 @@ const teams = [
             "en": "Hanhwa",
             "kr": "한화"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Lotte",
@@ -1415,7 +1413,7 @@ const teams = [
             "en": "Lotte",
             "kr": "롯데"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Samsung",
@@ -1428,7 +1426,7 @@ const teams = [
             "en": "Samsung",
             "kr": "삼성"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "KT",
@@ -1441,7 +1439,7 @@ const teams = [
             "en": "KT",
             "kr": "KT"
         }
-        "img: ""
+        "img": ""
     },
 
     // MLB
@@ -1458,7 +1456,7 @@ const teams = [
             "en": "Orioles",
             "kr": "오리올스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "RedSox",
@@ -1471,7 +1469,7 @@ const teams = [
             "en": "Red Sox",
             "kr": "레드 삭스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Yankees",
@@ -1484,7 +1482,7 @@ const teams = [
             "en": "Yankees",
             "kr": "양키스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Rays",
@@ -1497,7 +1495,7 @@ const teams = [
             "en": "Rays",
             "kr": "템파베이"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "BlueJays",
@@ -1510,7 +1508,7 @@ const teams = [
             "en": "Blue Jays",
             "kr": "블루제이스"
         }
-        "img: ""
+        "img": ""
     },
     // Middle Region
     {
@@ -1524,7 +1522,7 @@ const teams = [
             "en": "White Sox",
             "kr": "화이트 삭스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Cleveland",
@@ -1537,7 +1535,7 @@ const teams = [
             "en": "Cleveland",
             "kr": "클리블랜드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Detroit",
@@ -1550,7 +1548,7 @@ const teams = [
             "en": "Detroit",
             "kr": "디트로이트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "KansasCity",
@@ -1563,7 +1561,7 @@ const teams = [
             "en": "Kansas City",
             "kr": "캔자스시티"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Twins",
@@ -1576,7 +1574,7 @@ const teams = [
             "en": "Minnesota",
             "kr": "미네소타"
         }
-        "img: ""
+        "img": ""
     },
     // Western Region
     {
@@ -1590,7 +1588,7 @@ const teams = [
             "en": "Houston",
             "kr": "휴스턴"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Angels",
@@ -1603,7 +1601,7 @@ const teams = [
             "en": "Angels",
             "kr": "에인절스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Oakland",
@@ -1616,7 +1614,7 @@ const teams = [
             "en": "Oakland",
             "kr": "오클랜드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Mariners",
@@ -1629,7 +1627,7 @@ const teams = [
             "en": "Mariners",
             "kr": "매리너스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Rangers",
@@ -1642,7 +1640,7 @@ const teams = [
             "en": "Texas Rangers",
             "kr": "레인저스"
         }
-        "img: ""
+        "img": ""
     },
     // National League
     // Eastern Region
@@ -1657,7 +1655,7 @@ const teams = [
             "en": "Braves",
             "kr": "브레이브스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Marlins",
@@ -1670,7 +1668,7 @@ const teams = [
             "en": "Marlins",
             "kr": "말린스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Mets",
@@ -1683,7 +1681,7 @@ const teams = [
             "en": "Mets",
             "kr": "메츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Phillies",
@@ -1696,7 +1694,7 @@ const teams = [
             "en": "Phillies",
             "kr": "필리스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Nationals",
@@ -1709,7 +1707,7 @@ const teams = [
             "en": "Washington Nationals",
             "kr": "내셔널스"
         }
-        "img: ""
+        "img": ""
     },
     // Middle Region
     {
@@ -1723,7 +1721,7 @@ const teams = [
             "en": "Chicago Cubs",
             "kr": "시카고 컵스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Cincinnati",
@@ -1736,7 +1734,7 @@ const teams = [
             "en": "Cincinnati Reds",
             "kr": "신시내티 레즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Brewers",
@@ -1749,7 +1747,7 @@ const teams = [
             "en": "Brewers",
             "kr": "브루어스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Pirates",
@@ -1762,7 +1760,7 @@ const teams = [
             "en": "Pirates",
             "kr": "파이리츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Cardinals",
@@ -1775,7 +1773,7 @@ const teams = [
             "en": "St Louis Cardinals",
             "kr": "카디널스"
         }
-        "img: ""
+        "img": ""
     },
     // Western Region
     {
@@ -1789,7 +1787,7 @@ const teams = [
             "en": "Diamondbacks",
             "kr": "다이아몬드백스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Rockies",
@@ -1802,7 +1800,7 @@ const teams = [
             "en": "Rockies",
             "kr": "로키스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Dodgers",
@@ -1815,7 +1813,7 @@ const teams = [
             "en": "LA Dodgers",
             "kr": "LA 다저스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Padres",
@@ -1828,7 +1826,7 @@ const teams = [
             "en": "Padres",
             "kr": "파드리스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Giants",
@@ -1841,7 +1839,7 @@ const teams = [
             "en": "San Francisco Giants",
             "kr": "샌프란시스코 자이언츠"
         }
-        "img: ""
+        "img": ""
     },
 
     // NPB
@@ -1857,7 +1855,7 @@ const teams = [
             "en": "Yomiuri Giants",
             "kr": "요미우리 자이언츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Chunichi",
@@ -1870,7 +1868,7 @@ const teams = [
             "en": "Chunichi Dragons",
             "kr": "주니치 드래곤즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hanshin",
@@ -1883,7 +1881,7 @@ const teams = [
             "en": "Hanshin Tigers",
             "kr": "한신 타이거즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Hiroshima",
@@ -1896,7 +1894,7 @@ const teams = [
             "en": "Hiroshima Carp",
             "kr": "히로시마 카프"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Yokohama",
@@ -1909,7 +1907,7 @@ const teams = [
             "en": "Yokohama Baystars",
             "kr": "요코하마 베이스타즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Tokyo",
@@ -1922,7 +1920,7 @@ const teams = [
             "en": "Tokyo Swallows",
             "kr": "도쿄 스왈로즈"
         }
-        "img: ""
+        "img": ""
     },
     // Pacific League
     {
@@ -1936,7 +1934,7 @@ const teams = [
             "en": "Hokkaido Fighters",
             "kr": "홋카이도 파이터즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Fukuoka",
@@ -1949,7 +1947,7 @@ const teams = [
             "en": "Fukuoka Hawks",
             "kr": "후쿠오카 호크스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Chiba",
@@ -1962,7 +1960,7 @@ const teams = [
             "en": "Chiba Marines",
             "kr": "치바 마린즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Saitama",
@@ -1975,7 +1973,7 @@ const teams = [
             "en": "Saitama Lions",
             "kr": "사이타마 라이온즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Tohoku",
@@ -1988,7 +1986,7 @@ const teams = [
             "en": "Tohoku Golden Eagles",
             "kr": "토호쿠 골든이글스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Orix",
@@ -2001,10 +1999,8 @@ const teams = [
             "en": "Orix Buffaloes",
             "kr": "오릭스 버팔로즈"
         }
-        "img: ""
+        "img": ""
     },
-
-
 
     // Baskeetball
     // KBL
@@ -2019,7 +2015,7 @@ const teams = [
             "en": "Wonju Dongbu",
             "kr": "원주 동부"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "UlsanMobis",
@@ -2032,7 +2028,7 @@ const teams = [
             "en": "Ulsan Mobis",
             "kr": "울산 모비스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SeoulSamsung",
@@ -2045,7 +2041,7 @@ const teams = [
             "en": "Seoul Samsung",
             "kr": "서울 삼성"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SeoulSK",
@@ -2058,7 +2054,7 @@ const teams = [
             "en": "Seoul SK",
             "kr": "서울 SK"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "ChangwonLG",
@@ -2071,7 +2067,7 @@ const teams = [
             "en": "Changwon LG",
             "kr": "창원 LG"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "GoyangOrion",
@@ -2084,7 +2080,7 @@ const teams = [
             "en": "Goyang Orion",
             "kr": "고양 오리온"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "IncheonET",
@@ -2097,7 +2093,7 @@ const teams = [
             "en": "Incheon ET-Land",
             "kr": "인천 전자랜드"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "JeonjuKCC",
@@ -2110,7 +2106,7 @@ const teams = [
             "en": "Jeonju KCC",
             "kr": "전주 KCC"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "AnyangKGC",
@@ -2123,7 +2119,7 @@ const teams = [
             "en": "Anyang KGC",
             "kr": "안양 인삼공사"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "BusanKT",
@@ -2136,7 +2132,7 @@ const teams = [
             "en": "Busan KT",
             "kr": "부산 KT"
         }
-        "img: ""
+        "img": ""
     },
 
     // NBL
@@ -2153,7 +2149,7 @@ const teams = [
             "en": "Boston Celtics",
             "kr": "보스턴 셀틱스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "BrooklynNets",
@@ -2166,7 +2162,7 @@ const teams = [
             "en": "Brooklyn Nets",
             "kr": "브루클린 네츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "NYKnicks",
@@ -2179,7 +2175,7 @@ const teams = [
             "en": "NY Knicks",
             "kr": "뉴욕 닉스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "Philadelphia76",
@@ -2192,7 +2188,7 @@ const teams = [
             "en": "Philadelphia 76",
             "kr": "필라델피아 76"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "TorontoRaptors",
@@ -2205,7 +2201,7 @@ const teams = [
             "en": "Toronto Raptors",
             "kr": "토론토 랩터스"
         }
-        "img: ""
+        "img": ""
     },
     // Central Division
     {
@@ -2219,7 +2215,7 @@ const teams = [
             "en": "Chicago Bulls",
             "kr": "시카고 불스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "ClevelandCavaliers",
@@ -2232,7 +2228,7 @@ const teams = [
             "en": "Cleveland Cavaliers",
             "kr": "클리브랜드 캐벌리어스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "DetroitPistons",
@@ -2245,7 +2241,7 @@ const teams = [
             "en": "Detroit Pistons",
             "kr": "디트로이트 피스톤즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "IndianaPacers",
@@ -2258,7 +2254,7 @@ const teams = [
             "en": "Indiana Pacers",
             "kr": "인디애나 페이서스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "MilwaukeeBucks",
@@ -2271,7 +2267,7 @@ const teams = [
             "en": "Milwaukee Bucks",
             "kr": "밀워키 벅스"
         }
-        "img: ""
+        "img": ""
     },
     // South-east Division
     {
@@ -2285,7 +2281,7 @@ const teams = [
             "en": "Atlanta Hawks",
             "kr": "애틀랜타 호크스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "CharlotteHornets",
@@ -2298,7 +2294,7 @@ const teams = [
             "en": "Charlotte Hornets",
             "kr": "샬럿 호네츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "MiamiHeat",
@@ -2311,7 +2307,7 @@ const teams = [
             "en": "Miami Heat",
             "kr": "마이애미 히트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "OrlandoMagic",
@@ -2324,7 +2320,7 @@ const teams = [
             "en": "Orlando Magic",
             "kr": "올랜도 매직"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "WashingtonWizards",
@@ -2337,7 +2333,7 @@ const teams = [
             "en": "Washington Wizards",
             "kr": "워싱턴 위저즈"
         }
-        "img: ""
+        "img": ""
     },
 
     // Western Conference
@@ -2353,7 +2349,7 @@ const teams = [
             "en": "Denver Nuggets",
             "kr": "덴버 너기츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "MinnesotaTimberwolves",
@@ -2366,7 +2362,7 @@ const teams = [
             "en": "Minnesota Timberwolves",
             "kr": "미네소타 팀버울브스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "PortlandBlazers",
@@ -2379,7 +2375,7 @@ const teams = [
             "en": "Portland Blazers",
             "kr": "포틀랜드 블레이저스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "OklahomaThunder",
@@ -2392,7 +2388,7 @@ const teams = [
             "en": "Oklahoma Thunder",
             "kr": "오클라호마 썬더"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "UtahJazz",
@@ -2405,7 +2401,7 @@ const teams = [
             "en": "Utah Jazz",
             "kr": "유타 재즈"
         }
-        "img: ""
+        "img": ""
     },
     // Pacific Division
     {
@@ -2419,7 +2415,7 @@ const teams = [
             "en": "Golden State",
             "kr": "골든스테이트"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "LALakers",
@@ -2432,7 +2428,7 @@ const teams = [
             "en": "LA Lakers",
             "kr": "LA 레이커스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "LAClippers",
@@ -2445,7 +2441,7 @@ const teams = [
             "en": "LA Clippers",
             "kr": "LA 클리퍼스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "PhoenixSuns",
@@ -2458,7 +2454,7 @@ const teams = [
             "en": "Phoenix Suns",
             "kr": "피닉스 선즈"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SacramentoKings",
@@ -2471,7 +2467,7 @@ const teams = [
             "en": "Sacramento Kings",
             "kr": "새크라멘토 킹스"
         }
-        "img: ""
+        "img": ""
     },
     // South-west Division
     {
@@ -2485,7 +2481,7 @@ const teams = [
             "en": "Dallas Mavericks",
             "kr": "댈러스 매버릭스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "HoustonRockets",
@@ -2498,7 +2494,7 @@ const teams = [
             "en": "Houston Rockets",
             "kr": "휴스턴 로키츠"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "MemphisGrizzlies",
@@ -2511,7 +2507,7 @@ const teams = [
             "en": "Memphis Grizzlies",
             "kr": "멤피스 그리즐리스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "NewOrleansPelicans",
@@ -2524,7 +2520,7 @@ const teams = [
             "en": "New Orleans Pelicans",
             "kr": "뉴올리언스 펠리컨스"
         }
-        "img: ""
+        "img": ""
     },
     {
         "id": "SanAntonioSpurs",
@@ -2537,7 +2533,7 @@ const teams = [
             "en": "San Antonio Spurs",
             "kr": "샌안토니오 스퍼스"
         }
-        "img: ""
+        "img": ""
     }
 ];
 
