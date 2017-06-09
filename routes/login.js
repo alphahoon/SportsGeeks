@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
     json.utcOffset = req.user.utcOffset;
     json.language = req.user.language;
     json.date = req.user.date;
+    json.pref = req.user.pref;
     res.json(json);
 });
 
@@ -24,6 +25,7 @@ router.post('/', passport.authenticate('local'), (req, res) => {
     json.utcOffset = req.user.utcOffset;
     json.language = req.user.language;
     json.date = req.user.date;
+    json.pref = req.user.pref;
     res.json(json);
 });
 

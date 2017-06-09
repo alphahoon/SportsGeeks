@@ -18,6 +18,9 @@ router.get('/', (req, res, next) => {
                     teams.find()
                         .then((data) => {
                             json.teams = data;
+                            json.status = 'OK';
+                            res.json(json);
+                            /*
                             schedules.find()
                                 .then((data) => {
                                     json.status = 'OK';
@@ -33,6 +36,7 @@ router.get('/', (req, res, next) => {
                                     json.description = msg;
                                     res.json(json);
                                 });
+                            */
                         })
                         .catch((err) => {
                             var msg = 'error while finding teams data.';
