@@ -158,7 +158,7 @@ const leagues = [{
             "en": "KBO",
             "kr": "KBO"
         },
-        "img": "leagues/nfl.png"
+        "img": "leagues/kbo.png"
     },
     {
         "id": "MLB",

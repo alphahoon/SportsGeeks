@@ -26,9 +26,11 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(cookieParser());
+/*
 app.use(session({
     keys: ['KAIST', 'CS457', '...']
 }));
+*/
 app.use(express.static(path.join(__dirname, 'public')));
 
 // passport config
