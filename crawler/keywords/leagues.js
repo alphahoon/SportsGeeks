@@ -1,6 +1,7 @@
 const leagues = [{
         "id": "KLeague",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "Korea",
             "kr": "한국",
@@ -19,6 +20,7 @@ const leagues = [{
     {
         "id": "EPL",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "England",
             "kr": "영국",
@@ -37,6 +39,7 @@ const leagues = [{
     {
         "id": "Liga",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "Spain",
             "kr": "스페인",
@@ -55,6 +58,7 @@ const leagues = [{
     {
         "id": "SerieA",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "Italia",
             "kr": "이탈리아",
@@ -73,6 +77,7 @@ const leagues = [{
     {
         "id": "Bundesliga",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "Germany",
             "kr": "독일",
@@ -91,6 +96,7 @@ const leagues = [{
     {
         "id": "Ligue1",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "France",
             "kr": "프랑스",
@@ -109,6 +115,7 @@ const leagues = [{
     {
         "id": "MLS",
         "type": "league",
+        "sport": "Soccer",
         "country": {
             "en": "USA",
             "kr": "미국",
@@ -127,6 +134,7 @@ const leagues = [{
     {
         "id": "NFL",
         "type": "league",
+        "sport": "Football",
         "country": {
             "en": "USA",
             "kr": "미국",
@@ -145,6 +153,7 @@ const leagues = [{
     {
         "id": "KBO",
         "type": "league",
+        "sport": "Baseball",
         "country": {
             "en": "Korea",
             "kr": "한국",
@@ -163,6 +172,7 @@ const leagues = [{
     {
         "id": "MLB",
         "type": "league",
+        "sport": "Baseball",
         "country": {
             "en": "USA",
             "kr": "미국",
@@ -181,6 +191,7 @@ const leagues = [{
     {
         "id": "NPB",
         "type": "league",
+        "sport": "Baseball",
         "country": {
             "en": "Japan",
             "kr": "일본",
@@ -199,6 +210,7 @@ const leagues = [{
     {
         "id": "KBL",
         "type": "league",
+        "sport": "Basketball",
         "country": {
             "en": "Korea",
             "kr": "한국",
@@ -217,6 +229,7 @@ const leagues = [{
     {
         "id": "NBA",
         "type": "league",
+        "sport": "Basketball",
         "country": {
             "en": "USA",
             "kr": "미국",
