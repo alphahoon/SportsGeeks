@@ -1,17 +1,17 @@
-var mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-var request = require('request');
-var cheerio = require('cheerio');
-var Iconv = require('iconv').Iconv;
-var JH_Conv = require('./converter/JHConv');
-var moment = require('moment');
+function News_Naver(keyword) {
+    var request = require('request');
+    var cheerio = require('cheerio');
+    var Iconv = require('iconv').Iconv;
+    var JH_Conv = require('./converter/JHConv');
+    var moment = require('moment');
 
-var URL_time = "http://news.naver.com/main/search/search.nhn?so=datetime.dsc&rcsection=exist%3A107&query=";
-var src = "Naver";
-var Time_Type = ['seconds', 'minutes', 'hours', 'days', 'months', 'years'];
-var Time_Type_Kor = ['초', '분', '시간', '일', '달', '년'];
+    var URL_time = "http://news.naver.com/main/search/search.nhn?so=datetime.dsc&rcsection=exist%3A107&query=";
+    var src = "Naver";
+    var Time_Type = ['seconds', 'minutes', 'hours', 'days', 'months', 'years'];
+    var Time_Type_Kor = ['초', '분', '시간', '일', '달', '년'];
 
-function Crawl_Naver(keyword) {
+    keyword = JH_Conv(keyword);
+
     var option = {
         url: URL_time + keyword,
         encoding: null
@@ -72,17 +72,4 @@ function Crawl_Naver(keyword) {
     });
 }
 
-console.log("ready to connect mongoose");
-var key = "맨체스터 유나이티드";
-
-Crawl_Naver(JH_Conv(key));
-//mongoose.connect('mongodb://localhost:27017/main');
-//var db = mongoose.connection;
-//db.on('error', console.error.bind(console, 'connection error:'));
-//db.once('open', function () {
-//    console.log("Successfully connect mongoose!");
-//
-//    console.log(db);
-//
-//    db.close();
-//});
+module.exports = News_Naver;
