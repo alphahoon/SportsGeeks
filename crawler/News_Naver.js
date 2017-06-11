@@ -1,4 +1,4 @@
-function News_Naver(keyword) {
+function News_Naver(keyword, callback) {
     var request = require('request');
     var cheerio = require('cheerio');
     var Iconv = require('iconv').Iconv;
@@ -17,23 +17,25 @@ function News_Naver(keyword) {
         encoding: null
     };
 
+    var returnArray = new Array();
+
     console.log('ready for request');
 	request.get(option, function(error, response, body) {
 		if(error) {
 			console.log("Error: " + error);
-		}
+		
 		//console.log("Status code: " + response.statusCode);
         console.log("request success!");
         iconv = new Iconv('euc-kr', 'utf-8//translit//ignore');
         var $ = cheerio.load(iconv.convert(body).toString());
+        var itemProcessed = 0;
+        var itemNumber = $('ul.srch_lst > li > div.ct').length;
 
         $('ul.srch_lst > li > div.ct').each(function(index) {
             var title = $(this).find('a.tit').text().trim();
             var summary = $(this).find('p.dsc').text().trim();
             var timeString = $(this).find('div.info > span.time').text().trim();
-            var url = $(this).find('a.tit').attr('href').trim();
-
-            console.log("Every information gathering is done.");
+            var url = $(this).find('a.tit').attr('href').trim();  
 
             var timeTypeIndex = 0;
             var time = "";
@@ -62,12 +64,22 @@ function News_Naver(keyword) {
                 time = moment(timeString.replace('.', '-') + ' 21:00:00.000').utcOffset(0).toISOString();
             }
 
-            console.log(src)
-            console.log(title);
-            console.log(summary);
-            console.log(time);
-            console.log(url);
+            returnArray[index] = {
+                "src": src,
+                "title": title,
+                "summary": summary,
+                "posted": time,
+                "url": url
+            }
 
+            itemProcessed++;
+            console.log('(Processing) ' + itemProcessed + " of " + itemNumber);
+
+            if(itemProcessed = itemNumber) {
+                console.log("(Processing)Done!");
+                callback(returnArray);
+                console.log("(News_Naver)End of module");
+            }
 	    });
     });
 }

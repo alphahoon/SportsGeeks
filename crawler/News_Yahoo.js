@@ -15,6 +15,8 @@ function News_Yahoo(keyword, callback) {
 		console.log("(News_Yahoo)Status code: " + response.statusCode);
            
         var $ = cheerio.load(body);
+        var itemProcessed = 0;
+        var itemNumber = $('div.NewsArticle > div.layoutCenter').length;
 
         $('div.NewsArticle > div.layoutCenter').each(function(index) {
             var title = $(this).find('div.compTitle > h3.title > ').text().trim();
@@ -56,17 +58,16 @@ function News_Yahoo(keyword, callback) {
                 "url": url
             }
 
-            //console.log(src)
-            //console.log(title);
-            //console.log(summary);
-            //console.log(time);
-            //console.log(url);
+            itemProcessed++;
+            console.log('(Processing) ' + itemProcessed + ' of ' + itemNumber);
+
+            if(itemProcessed == itemNumber) {
+                console.log('(Processing)Done!');
+                callback(returnArray);
+                console.log("(News_Yahoo)End of module");
+            }
 	    });
-
-        callback(returnArray);
     });
-
-    console.log("(News_Yahoo)End of module");
 }
 
 module.exports = News_Yahoo;
