@@ -48,15 +48,25 @@ function News_Yahoo(keyword, callback) {
                 time = moment(timeString.replace('.', '-') + ' 21:00:00.000').utcOffset(0).toISOString();
             }
 
+            returnArray[index] = {
+                "src": src,
+                "title": title,
+                "summary": summary,
+                "posted": time,
+                "url": url
+            }
+
             //console.log(src)
             //console.log(title);
             //console.log(summary);
             //console.log(time);
             //console.log(url);
-
-            callback(
 	    });
+
+        callback(returnArray);
     });
+
+    console.log("(News_Yahoo)End of module");
 }
 
 module.exports = News_Yahoo;

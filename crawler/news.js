@@ -2,7 +2,6 @@ const monk = require('monk');
 const url = 'localhost:27017/main';
 const db = monk(url);
 
-var async = require('async');
 var News_Naver = require('./News_Naver');
 var News_ESPN = require('./News_ESPN');
 
@@ -15,42 +14,37 @@ const collectionNews = db.get('news');
 
 collectionNews.remove();
 
-collectionTeams.find({id: "ManUtd"})
-    .then((teams) => {
+collectionTeams.findOne({id: "ManUtd"})
+    .then((team) => {
         console.log("(news.js)found");
 
-        teams.forEach(function(team) {
-            var id = team.id;
-            var name_en = team.name.en;
-            var name_kr = team.name.kr;
-            var alias_en = team.alias.en;
-            var alias_kr = team.alias.kr;
+        var id = team.id;
+        var name_en = team.name.en;
+        var name_kr = team.name.kr;
+        var alias_en = team.alias.en;
+        var alias_kr = team.alias.kr;
 
-            News_ESPN(name_en, function(result) {
-                collectionNews.insert({
-                    "keyword": [
-                        name_en,
-                        name_kr,
-                        alias_en,
-                        alias_kr
-                    ],
-                    "team": id,
-                    "article": result
-                });
+        News_ESPN(name_en, function(result) {
+            collectionNews.insert({
+                "keyword": [
+                    name_en,
+                    name_kr,
+                    alias_en,
+                    alias_kr
+                ],
+                "team": id,
+                "article": result
+            })
+            .catch((err) => {
+                console.log('Error while inserting news');
+            })
+            .then(() => {
+                console.log("(News Crawler)Close DB");
+                db.close();
+                console.log("(News Crawler)End of program");
             });
         });
-
-        console.log("news.js)End of forEach loop");
     })
     .catch((err) => {
         console.log("(news.js)" + err);
-    })
-    .then(() => {
-        console.log("(news.js)Close DB");
-        db.close();
-        console.log("(news.js)End of program");
-    })
-
-//const collection = db.get('news');
-
-//collection.find
+    });

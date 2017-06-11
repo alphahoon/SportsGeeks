@@ -7,7 +7,7 @@ function News_ESPN(keyword, callback) {
     var src = "ESPN";
     var returnArray = new Array();
 
-    request(URL_query + keyword, function(error, response, body) {
+    request(URL_query + keyword.replace(/ /gi, '+'), function(error, response, body) {
 		if(error) {
 			console.log("(News_ESPN)Error: " + error);
 		}
@@ -15,6 +15,8 @@ function News_ESPN(keyword, callback) {
       
         var $ = cheerio.load(body);
 
+        var itemProcessed = 0;
+        var itemNumber = $('li.result').length;
         $('li.result').each(function(index) {
             var title = $(this).find('h3 > a').text().trim();
             var summary = $(this).find('div > p').text().trim();
@@ -38,19 +40,16 @@ function News_ESPN(keyword, callback) {
                 "posted": time,
                 "url": url
             }
-            //console.log(src);
-            //console.log(title);
-            //console.log(summary);
-            //console.log(time);
-            //console.log(url);
+            
+            itemProcessed++;
+            console.log('(Processing) ' + itemProcessed + ' of ' + itemNumber);
+            if (itemProcessed == itemNumber) {
+                console.log('(Processing) Done!');
+                callback(returnArray);
+                console.log("(News_ESPN)end of module");
+            }
 	    });
-
-        callback(returnArray);
-
-        console.log("(News_ESPN.js)end of callback");
     });
-
-    console.log("(News_ESPN.js)end of program");
 }
 
 module.exports = News_ESPN;
