@@ -817,18 +817,18 @@ const teams = [
         "img": "teams/Sociedad.png"
     },
     {
-        "id": "Sevilla FC",
+        "id": "SevillaFC",
         "type": "team",
         "league": "Liga",
         "name": {
             "en": "Sevilla FC",
-            "kr": "세빌라 FC"
+            "kr": "세비야 FC"
         },
         "alias": {
             "en": "Sevilla",
-            "kr": "세빌라"
+            "kr": "세비야"
         },
-        "img": "teams/Sevilla FC.png"
+        "img": "teams/SevillaFC.png"
     },
     {
         "id": "Sporting",
