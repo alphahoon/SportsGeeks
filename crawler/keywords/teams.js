@@ -1410,10 +1410,599 @@ const teams = [
     },
 
     // Ligue1
+    {
+        "id": "Monaco",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "AS Monaco",
+            "kr": "AS 모나코"
+        },
+        "alias": {
+            "en": "AS Monaco",
+            "kr": "AS 모나코"
+        },
+        "img": "teams/Monaco.png"
+    },
+    {
+        "id": "PSG",
+        "type": "team",
+        "league": "",
+        "name": {
+            "en": "Paris Saint-Germain",
+            "kr": "파리 생제르맹"
+        },
+        "alias": {
+            "en": "PSG",
+            "kr": "파리 생제르맹"
+        },
+        "img": "teams/PSG.png"
+    },
+    {
+        "id": "OGC_Nice",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "OGC Nice",
+            "kr": "OGC 니스"
+        },
+        "alias": {
+            "en": "OGC Nice",
+            "kr": "OGC 니스"
+        },
+        "img": "teams/OGC_Nice.png"
+    },
+    {
+        "id": "Lyon",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Olympique Lyonnais",
+            "kr": "올랭피크 리옹"
+        },
+        "alias": {
+            "en": "Olympique Lyonnais",
+            "kr": "올림피크 리옹"
+        },
+        "img": "teams/Lyon.png"
+    },
+    {
+        "id": "Marseille",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Olympique de Marseille",
+            "kr": "올랭피크 드 마르세유"
+        },
+        "alias": {
+            "en": "Olympique Marseille",
+            "kr": "마르세유"
+        },
+        "img": "teams/Marseille.png"
+    },
+    {
+        "id": "Bordeaux",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Girondins de Bordeaux",
+            "kr": "지롱댕 드 보르도"
+        },
+        "alias": {
+            "en": "Bordeaux",
+            "kr": "보르도"
+        },
+        "img": "teams/Bordeaux.png"
+    },
+    {
+        "id": "Nantes",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "FC Nantes",
+            "kr": "FC 낭트"
+        },
+        "alias": {
+            "en": "Nantes",
+            "kr": "낭트"
+        },
+        "img": "teams/Nantes.png"
+    },
+    {
+        "id": "SaintEtienne",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "AS Saint-Etienne",
+            "kr": "AS 생테티엔"
+        },
+        "alias": {
+            "en": "Saint Etienne",
+            "kr": "생태티엔"
+        },
+        "img": "teams/SaintEtienne.png"
+    },
+    {
+        "id": "Rennais",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Stade Rennais FC",
+            "kr": "스타드 렌 FC"
+        },
+        "alias": {
+            "en": "Stade Rennais",
+            "kr": "스타드 렌"
+        },
+        "img": "teams/Rennais.png"
+    },
+    {
+        "id": "Guingamp",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "EA Guingamp",
+            "kr": "아나방 갱강"
+        },
+        "alias": {
+            "en": "Guingamp",
+            "kr": "갱강"
+        },
+        "img": "teams/Guingamp.png"
+    },
+    {
+        "id": "LOSC",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "LOSC Lille",
+            "kr": "LOSC 릴"
+        },
+        "alias": {
+            "en": "LOSC",
+            "kr": "LOSC"
+        },
+        "img": "teams/LOSC.png"
+    },
+    {
+        "id": "Angers",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Angers SCO",
+            "kr": "앙제 SCO"
+        },
+        "alias": {
+            "en": "Angers",
+            "kr": "앙제"
+        },
+        "img": "teams/Angers.png"
+    },
+    {
+        "id": "Toulouse",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Toulouse FC",
+            "kr": "툴루즈 FC"
+        },
+        "alias": {
+            "en": "Toulouse",
+            "kr": "툴루즈"
+        },
+        "img": "teams/Toulouse.png"
+    },
+    {
+        "id": "Metz",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "FC Metz",
+            "kr": "FC 메스"
+        },
+        "alias": {
+            "en": "Metz",
+            "kr": "FC 메스"
+        },
+        "img": "teams/Metz.png"
+    },
+    {
+        "id": "Montpellier",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Montpellier Herault SC",
+            "kr": "몽펠리에 에롤 SC"
+        },
+        "alias": {
+            "en": "Montpellier",
+            "kr": "몽펠리에"
+        },
+        "img": "teams/Montpellier.png"
+    },
+    {
+        "id": "Dijon",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Dijon FCO",
+            "kr": "디종 FCO"
+        },
+        "alias": {
+            "en": "Dijon",
+            "kr": "디종"
+        },
+        "img": "teams/Dijon.png"
+    },
+    {
+        "id": "Caen",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "SM Caen",
+            "kr": "SM 캉"
+        },
+        "alias": {
+            "en": "Caen",
+            "kr": "SM 캉"
+        },
+        "img": "teams/Caen.png"
+    },
+    {
+        "id": "Lorient",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "FC Lorient",
+            "kr": "FC 로리앙"
+        },
+        "alias": {
+            "en": "Lorient",
+            "kr": "로리앙"
+        },
+        "img": "teams/Lorient.png"
+    },
+    {
+        "id": "Nancy",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "AS Nancy Lorraine",
+            "kr": "AS 낭시"
+        },
+        "alias": {
+            "en": "Nancy Lorraine",
+            "kr": "낭시"
+        },
+        "img": "teams/Nancy.png"
+    },
+    {
+        "id": "Bastia",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "SC Bastia",
+            "kr": "SC 바스티아"
+        },
+        "alias": {
+            "en": "Bastia",
+            "kr": "바스티아"
+        },
+        "img": "teams/Bastia.png"
+    },
 
     // MLS
-
-    // -------------------FOOTBALL-------------------
+    // Wetstern Conference
+    {
+        "id": "ColoradoRapids"
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Colorado Rapids",
+            "kr": "콜로라도 래피즈"
+        },
+        "alias": {
+            "en": "Colorado Rapids",
+            "kr": "콜로라도 래피즈"
+        },
+        "img": "teams/ColoradoRapids.png"
+    },
+    {
+        "id": "FCDallas",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "FC Dallas",
+            "kr": "FC 댈러스"
+        },
+        "alias": {
+            "en": "FC Dallas",
+            "kr": "FC 댈러스"
+        },
+        "img": "teams/FCDallas.png"
+    },
+    {
+        "id": "HoustonDynamo",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Houston Dynamo",
+            "kr": "휴스턴 다이나모"
+        },
+        "alias": {
+            "en": "Houston Dynamo",
+            "kr": "휴스턴 다이나모"
+        },
+        "img": "teams/HoustonDynamo.png"
+    },
+    {
+        "id": "LAGalaxy",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "LA Galaxy",
+            "kr": "LA 갤럭시"
+        },
+        "alias": {
+            "en": "LA Galaxy",
+            "kr": "LA 갤럭시"
+        },
+        "img": "teams/LAGalaxy.png"
+    },
+    {
+        "id": "MinnesotaUtd",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Minnesota United FC",
+            "kr": "미네소타 유나이티드 FC"
+        },
+        "alias": {
+            "en": "Minnesota Utd",
+            "kr": "미네소타 FC"
+        },
+        "img": "teams/MinnesotaUtd.png"
+    },
+    {
+        "id": "PortlandTimbers",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Portland Timbers",
+            "kr": "포틀랜드 팀버스"
+        },
+        "alias": {
+            "en": "Portland Timbers",
+            "kr": "포틀랜드 팀버스"
+        },
+        "img": "teams/PortlandTimbers.png"
+    },
+    {
+        "id": "RSL",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Real Salt Lake",
+            "kr": "레알 솔트레이크"
+        },
+        "alias": {
+            "en": "RSL",
+            "kr": "레알 솔트레이크"
+        },
+        "img": "teams/RSL.png"
+    },
+    {
+        "id": "SanJose",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "San Jose Earthquakes",
+            "kr": "산호세 어스퀘이크스"
+        },
+        "alias": {
+            "en": "San Jose Earthquakes",
+            "kr": "산호세 어스퀘이크스"
+        },
+        "img": "teams/SanJose.png"
+    },
+    {
+        "id": "SeattleSounders",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Seattle Sounders FC",
+            "kr": "시애틀 사운더스 FC"
+        },
+        "alias": {
+            "en": "Sounders",
+            "kr": "시애틀 사운더스"
+        },
+        "img": "teams/SeattleSounders.png"
+    },
+    {
+        "id": "SportingKansas",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Sporting Kansas City",
+            "kr": "스포팅 캔자스시티"
+        },
+        "alias": {
+            "en": "Sporting Kansas City",
+            "kr": "스포팅 캔자스시티"
+        },
+        "img": "teams/SportingKansas.png"
+    },
+    {
+        "id": "Whitecaps",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Vancouver Whitecaps FC",
+            "kr": "밴쿠버 화이트캡스 FC"
+        },
+        "alias": {
+            "en": "Whitecaps",
+            "kr": "화이트캡스"
+        },
+        "img": "teams/Whitecaps.png"
+    },
+    // Eastern Conference
+    {
+        "id": "AtlantaUtd",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Atlanta United FC",
+            "kr": "애틀랜타 유나이티드 FC"
+        },
+        "alias": {
+            "en": "Atlanta Utd",
+            "kr": "애틀랜타 유나이티드"
+        },
+        "img": "teams/AtlantaUtd.png"
+    },
+    {
+        "id": "ChicagoFire",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Chicago Fire",
+            "kr": "시카고 파이어"
+        },
+        "alias": {
+            "en": "Chicago Fire",
+            "kr": "시카고 파이어"
+        },
+        "img": "teams/ChicagoFire.png"
+    },
+    {
+        "id": "ColumbusCrew",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Columbus Crew SC",
+            "kr": "콜럼버스 크루 SC"
+        },
+        "alias": {
+            "en": "Columbus Crew",
+            "kr": "콜럼버스 크루"
+        },
+        "img": "teams/ColumbusCrew.png"
+    },
+    {
+        "id": "DCUtd",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "DC United",
+            "kr": "DC 유나이티드"
+        },
+        "alias": {
+            "en": "DC Utd",
+            "kr": "DC 유나이티드"
+        },
+        "img": "teams/DCUtd.png"
+    },
+    {
+        "id": "MontrealImpact",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Montreal Impact",
+            "kr": "몬트리올 임팩트"
+        },
+        "alias": {
+            "en": "Montreal Impact",
+            "kr": "몬트리올 임팩트"
+        },
+        "img": "teams/MontrealImpact.png"
+    },
+    {
+        "id": "NewEngland",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "New England Revolution",
+            "kr": "뉴잉글랜드 레볼루션"
+        },
+        "alias": {
+            "en": "New England Revolution",
+            "kr": "뉴잉글랜드 레볼루션"
+        },
+        "img": "teams/NewEngland.png"
+    },
+    {
+        "id": "NewYorkFC",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "New York City FC",
+            "kr": "뉴욕 시티 FC"
+        },
+        "alias": {
+            "en": "New York City FC",
+            "kr": "뉴욕 시티 FC"
+        },
+        "img": "teams/NewYorkFC.png"
+    },
+    {
+        "id": "NewYorkRedBulls",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "New York Red Bulls",
+            "kr": "뉴욕 레드불스"
+        },
+        "alias": {
+            "en": "New York Red Bulls",
+            "kr": "뉴욕 레드불스"
+        },
+        "img": "teams/NewYorkRedBulls.png"
+    },
+    {
+        "id": "OrlandoSC",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Orlando City SC",
+            "kr": "올랜도 시티 SC"
+        },
+        "alias": {
+            "en": "Orlando SC",
+            "kr": "올랜도 SC"
+        },
+        "img": "teams/OrlandoSC.png"
+    },
+    {
+        "id": "PhiladelphiaUnion",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Philadelphia Union",
+            "kr": "필라델피아 유니언"
+        },
+        "alias": {
+            "en": "Philadelphia Union",
+            "kr": "필라델피아 유니언"
+        },
+        "img": "teams/PhiladelphiaUnion.png"
+    },
+    {
+        "id": "TorontoFC",
+        "type": "team",
+        "league": "MLS",
+        "name": {
+            "en": "Toronto FC",
+            "kr": "토론토 FC"
+        },
+        "alias": {
+            "en": "Toronto FC",
+            "kr": "토론토 FC"
+        },
+        "img": "teams/TorontoFC.png"
+    },
+        // -------------------FOOTBALL-------------------
     // NFL
 
     // -------------------BASEBALL-------------------
