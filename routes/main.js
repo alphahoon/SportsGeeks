@@ -17,22 +17,9 @@ router.get('/', (req, res, next) => {
                     json.leagues = data;
                     teams.find()
                         .then((data) => {
+                            json.status = 'OK';
                             json.teams = data;
-                            schedules.find()
-                                .then((data) => {
-                                    json.status = 'OK';
-                                    json.schedules = data;
-                                    res.json(json);
-                                })
-                                .catch((err) => {
-                                    var msg = 'error while finding schedules data.';
-                                    console.log(msg.red);
-                                    console.log(err);
-                                    json = {};
-                                    json.status = 'ERROR';
-                                    json.description = msg;
-                                    res.json(json);
-                                });
+                            res.json(json);
                         })
                         .catch((err) => {
                             var msg = 'error while finding teams data.';
@@ -56,6 +43,37 @@ router.get('/', (req, res, next) => {
         })
         .catch((err) => {
             var msg = 'error while finding sports data.';
+            console.log(msg.red);
+            console.log(err);
+            json = {};
+            json.status = 'ERROR';
+            json.description = msg;
+            res.json(json);
+        });
+});
+
+router.post('/', (req, res, next) => {
+    const db = req.app.get('db');
+    const bodyObj = req.app.get('bodyObj');
+    const schedules = db.get('schedules');
+
+    var json = {};
+    schedules.find()
+        .then((data) => {
+            json.status = 'OK';
+            json.schedules = [];
+            var begin = new Date(bodyObj.begin).getTime();
+            var end = new Date(bodyObj.end).getTime();
+            for (var i in data) {
+                var date = new Date(data[i].datetime).getTime();
+                if (date >= begin && date <= end) {
+                    json.schedules.push(data[i]);
+                }
+            }
+            res.json(json);
+        })
+        .catch((err) => {
+            var msg = 'error while finding schedule data.';
             console.log(msg.red);
             console.log(err);
             json = {};

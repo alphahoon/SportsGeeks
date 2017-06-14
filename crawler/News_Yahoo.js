@@ -55,7 +55,7 @@ function News_Yahoo(keyword, callback) {
                 }
 
                 if (time == "") {
-                    if(timeString.strip() == 'moments ago') {
+                    if(timeString.trim() == 'moments ago') {
                         time = moment();
                     }
                     else {
@@ -77,9 +77,9 @@ function News_Yahoo(keyword, callback) {
                 //console.log('(Processing) ' + itemProcessed + ' of ' + itemNumber);
 
                 if(itemProcessed == itemNumber) {
-                    //console.log('(Processing)Done!');
-                    callback(returnArray);
+                    //console.log('(Processing)Done!'); 
                     console.log("(News_Yahoo)End of crawling " + keyword);
+                    callback(returnArray);
                 }
             });
         }

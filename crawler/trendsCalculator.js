@@ -17,18 +17,34 @@ function getTrendsWrapper() {
         .toDate();
 
     var keywords = [];
-    var keywords_input = fs.readFileSync('./keywords.txt', 'utf8')
-        .split('\n')
-        .filter(Boolean);
-    for (var index = 0; index < keywords_input.length; index++) {
-        keywords.push({
-            name: keywords_input[index],
-            trendsVal: 0
-        });
-    }
-    //console.log(keywords);
-    var ref = keywords[0].name;
-    getTrends(ref, keywords, 1, 4, startTime, endTime, normalizeKeywords);
+    const monk = require('monk');
+    const url = 'localhost:27017/main';
+    const db = monk(url);
+    db.then(() => {
+        const Teams = db.get('teams');
+        Teams.find()
+            .then((teams) => {
+                for (var i in teams) {
+                    var league = teams[i].league;
+                    if(league != 'KBO' && league != 'KLeague' && league != 'KBL') {
+                        keywords.push({
+                            id: teams[i].id,
+                            name: teams[i].name.en,
+                            trendsVal: 0
+                        });
+                    }
+                }
+                var ref = keywords[0].name;
+                getTrends(ref, keywords, 1, 4, startTime, endTime, normalizeKeywords);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            .then(() => {
+                db.close();
+                console.log('(TrendsCalculator) DB Close');
+            });
+    });
 }
 
 function getTrends(ref, keywords, begin, end, startTime, endTime, callback) {
@@ -128,6 +144,7 @@ function storeKeywords(keywords) {
                 var objArr = [];
                 for (var index = 0; index < keywords.length; index++) {
                     objArr.push(new Trends({
+                        id: keywords[index].id,
                         name: keywords[index].name,
                         trendsVal: keywords[index].trendsVal,
                         rank: keywords[index].rank

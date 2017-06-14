@@ -65,12 +65,15 @@ function News_Team(team) {
                             article = article.concat(result);
 
                             collectionNews.update({team: team.id}, {$set: {article: article}})
+                                .then(() => {
+                                    console.log("(News_Team)News insertion for " + team.id + " is done");
+                                })
                                 .catch((err) => {
-                                    console.log("(News_Team)Error while inserting news");
+                                    console.log("(News_Team)Error while updating news");
                                 })
                                 .then(() => {
                                     db.close();
-                                    console.log("(News_Team)" + team.id + " End");
+                                    console.log("(News_Team)" + team.id + " DB Close");
                                 });
                         });
                     });

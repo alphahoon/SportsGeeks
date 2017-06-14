@@ -50,8 +50,8 @@ function News_ESPN(keyword, callback) {
 
                 if (itemProcessed == itemNumber) {
                     //console.log('(Processing) Done!');
-                    callback(returnArray);
                     console.log("(News_ESPN)End of crawling " + keyword);
+                    callback(returnArray);
                 }
             });
         }

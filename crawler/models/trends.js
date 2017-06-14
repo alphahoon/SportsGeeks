@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 var trendsSchema = new mongoose.Schema({
+    id: String,
     name: String,
     trendsVal: Number,
     rank: Number,

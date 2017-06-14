@@ -12,11 +12,10 @@ function News_Naver(keyword, callback) {
     var Time_Type = ['seconds', 'minutes', 'hours', 'days', 'months', 'years'];
     var Time_Type_Kor = ['초', '분', '시간', '일', '달', '년'];
 
-    keyword = JH_Conv(keyword);
-
     var option = {
-        url: URL_time + keyword,
-        encoding: null
+        url: URL_time + JH_Conv(keyword),
+        encoding: null,
+        timeout: 10000
     };
 
     var returnArray = new Array();
@@ -64,7 +63,12 @@ function News_Naver(keyword, callback) {
                 }
 
                 if (time == "") {
-                    time = moment(timeString.replace(/./g, '-'));
+                    if(!(/^[0-9.]$/.test(timeString))) {
+                        time = moment();
+                    }
+                    else {
+                        time = moment(timeString.replace(/./g, '-'));
+                    }
                 }
 
                 time = time.utcOffset(0).add(-9, 'h').format();
@@ -82,8 +86,8 @@ function News_Naver(keyword, callback) {
 
                 if(itemProcessed == itemNumber) {
                     //console.log("(Processing)Done!");
-                    callback(returnArray);
                     console.log("(News_Naver)End of crawling " + keyword);
+                    callback(returnArray);
                 }
             });
         }

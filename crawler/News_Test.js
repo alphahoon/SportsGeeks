@@ -16,7 +16,7 @@ collection.find()
     .then((teams) => {
         teams.forEach(function(team) {
             News_Naver(team.name.kr, function(result) {
-            console.log("News_Test " + team.id + " is done");
+                console.log("News_Test " + team.id + " is done");
             });
         });
     })

@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
+router.post('/', (req, res, next) => {
     const db = req.app.get('db');
+    const bodyObj = req.app.get('bodyObj');
+    const standings = db.get('standings');
 
     var json = {};
-    res.json(json);
-    /*
-    schedules.find()
+    standings.find({league: bodyObj.league})
         .then((data) => {
             json.status = 'OK';
-            json.schedules = data;
+            json.data = data;
             res.json(json);
         })
         .catch((err) => {
-            var msg = 'error while finding schedules data.';
+            var msg = 'error while finding standings data.';
             console.log(msg.red);
             console.log(err);
             json = {};
@@ -22,7 +22,6 @@ router.get('/', (req, res, next) => {
             json.description = msg;
             res.json(json);
         });
-    */
 });
 
 module.exports = router;

@@ -11,8 +11,8 @@ function crawl(){
 
   var objArr = [];
 
-  request("http://www.espnfc.com/english-premier-league/23/table", function(error, response, body) {
-    console.log('request is '+"http://www.espnfc.com/english-premier-league/23/table");
+  request("http://www.espnfc.com/english-premier-league/23/table?season=2016", function(error, response, body) {
+    console.log('request is '+"http://www.espnfc.com/english-premier-league/23/table?season=2016");
     if(error) {
       console.log("Error: " + error);
     }

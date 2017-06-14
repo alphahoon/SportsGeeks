@@ -103,7 +103,7 @@ function crawl(){
                       t1 = 'Sociedad'
                       break;
                     case 'Sevilla FC':
-                      t1 = 'Sevilla FC'
+                      t1 = 'SevillaFC'
                       break;
                     case 'Sporting Gijón':
                       t1 = 'Sporting'
