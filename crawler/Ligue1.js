@@ -22,8 +22,8 @@ function crawl(){
         else{
           var t=i+1
         }
-        request("http://www.espnfc.com/italian-serie-a/12/scores?date=201705"+t, function(error, response, body) {
-          console.log('request is '+"http://www.espnfc.com/italian-serie-a/12/scores?date=201705"+t);
+        request("http://www.espnfc.com/french-ligue-1/9/scores?date=201705"+t, function(error, response, body) {
+          console.log('request is '+"http://www.espnfc.com/french-ligue-1/9/scores?date=201705"+t);
           if(error) {
             console.log("Error: " + error);
           }
@@ -55,66 +55,68 @@ function crawl(){
                   //console.log(tteam[j].trim());
                   var t1 = ''
                   switch(tteam[j].trim()){
-                    case 'Atalanta':
-                      t1 = 'Atalanta'
+                    case 'AS Monaco':
+                      t1 = 'Monaco'
                       break;
-                    case 'Bologna':
-                      t1 = 'Bologna'
+                    case 'Paris Saint-Germain':
+                      t1 = 'PSG'
                       break;
-                    case 'Cagliari':
-                      t1 = 'Cagliari'
+                    case 'Nice':
+                      t1 = 'OGC_Nice'
                       break;
-                    case 'Chievo Verona':
-                      t1 = 'Chievo'
+                    case 'Lyon':
+                      t1 = 'Lyon'
                       break;
-                    case 'Crotone':
-                      t1 = 'Crotone'
+                    case 'Marseille':
+                      t1 = 'Marseille'
                       break;
-                    case 'Empoli':
-                      t1 = 'Empoli'
+                    case 'Bordeaux':
+                      t1 = 'Bordeaux'
                       break;
-                    case 'Fiorentina':
-                      t1 = 'Fiorentina'
+                    case 'Nantes':
+                      t1 = 'Nantes'
                       break;
-                    case 'Genoa':
-                      t1 = 'Genoa'
+                    case 'St Etienne':
+                      t1 = 'SaintEtienne'
                       break;
-                    case 'Internazionale':
-                      t1 = 'Inter'
+                    case 'Stade Rennes':
+                      t1 = 'Rennais'
                       break;
-                    case 'Juventus':
-                      t1 = 'Juventus'
+                    case 'Guingamp':
+                      t1 = 'Guingamp'
                       break;
-                    case 'Lazio':
-                      t1 = 'Lazio'
+                    case 'Lille':
+                      t1 = 'LOSC'
                       break;
-                    case 'AC Milan':
-                      t1 = 'Milan'
+                    case 'Angers':
+                      t1 = 'Angers'
                       break;
-                    case 'Napoli':
-                      t1 = 'Napoli'
+                    case 'Toulouse':
+                      t1 = 'Toulouse'
                       break;
-                    case 'Palermo':
-                      t1 = 'Palermo'
+                    case 'Metz':
+                      t1 = 'Metz'
                       break;
-                    case 'US Pescara':
-                      t1 = 'Pescara'
+                    case 'Montpellier':
+                      t1 = 'Montpellier'
                       break;
-                    case 'AS Roma':
-                      t1 = 'Roma'
+                    case 'Dijon FCO':
+                      t1 = 'Dijon'
                       break;
-                    case 'Sampdoria':
-                      t1 = 'Sampdoria'
+                    case 'Caen':
+                      t1 = 'Caen'
                       break;
-                    case 'Sassuolo':
-                      t1 = 'Sasuuolo'
+                    case 'Lorient':
+                      t1 = 'Lorient'
                       break;
-                    case 'Torino':
-                      t1 = 'Torino'
+                    case 'AS Nancy Lorraine':
+                      t1 = 'Nancy'
                       break;
-                    case 'Udinese':
-                      t1 = 'Udinese'
+                    case 'Bastia':
+                      t1 = 'Bastia'
                       break;
+                    case 'Troyes':
+                      t1 = 'Troyes'
                   }
 
                   if((OddOrEven%2)==0){
@@ -124,7 +126,7 @@ function crawl(){
                   else{
                     objArr.push({
                       sport: "Soccer",
-                      league: "SerieA",
+                      league: "Ligue1",
                       teamA: teamtemp,
                       teamB: t1,
                       done: true, // Default: "false"

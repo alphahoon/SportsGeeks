@@ -1,4 +1,6 @@
 function News_Naver(keyword, callback) {
+    console.log('(News_Naver)Begin of crawling ' + keyword);
+
     var request = require('request');
     var cheerio = require('cheerio');
     var Iconv = require('iconv').Iconv;
@@ -19,68 +21,72 @@ function News_Naver(keyword, callback) {
 
     var returnArray = new Array();
 
-    console.log('ready for request');
 	request.get(option, function(error, response, body) {
 		if(error) {
-			console.log("Error: " + error);
-		
-		//console.log("Status code: " + response.statusCode);
-        console.log("request success!");
-        iconv = new Iconv('euc-kr', 'utf-8//translit//ignore');
-        var $ = cheerio.load(iconv.convert(body).toString());
-        var itemProcessed = 0;
-        var itemNumber = $('ul.srch_lst > li > div.ct').length;
+			console.log("(News_Naver)Error: " + error);
+            callback(new Array());
+        }
+		else {
+    		console.log("(News_Naver)Status code: " + response.statusCode);
 
-        $('ul.srch_lst > li > div.ct').each(function(index) {
-            var title = $(this).find('a.tit').text().trim();
-            var summary = $(this).find('p.dsc').text().trim();
-            var timeString = $(this).find('div.info > span.time').text().trim();
-            var url = $(this).find('a.tit').attr('href').trim();  
+            iconv = new Iconv('euc-kr', 'utf-8//translit//ignore');
+            var $ = cheerio.load(iconv.convert(body).toString());
+            var itemProcessed = 0;
+            var itemNumber = $('ul.srch_lst > li > div.ct').length;
 
-            var timeTypeIndex = 0;
-            var time = "";
+            $('ul.srch_lst > li > div.ct').each(function(index) {
+                var title = $(this).find('a.tit').text().trim();
+                var summary = $(this).find('p.dsc').text().trim();
+                var timeString = $(this).find('div.info > span.time').text().trim();
+                var url = $(this).find('a.tit').attr('href').trim();  
 
-            if (summary.length > 40) {
-                summary = summary.substring(0, 40);
-            }
+                var timeTypeIndex = 0;
+                var time = "";
 
-            for(var i = 0; i < Time_Type_Kor.length; i++) {
-                var timeIndex = timeString.indexOf(Time_Type_Kor[i]);
-
-                if(timeIndex != -1) {
-                    if(i == 0) {
-                        timeString = 0;
-                    }
-                    else {
-                        timeString = timeString.substring(0, timeIndex);
-                        time = moment().add(-1 * timeString, Time_Type[i]).utcOffset(0).toISOString();
-                    }
-
-                    break;
+                if (summary.length > 40) {
+                    summary = summary.substring(0, 40);
                 }
-            }
 
-            if (time == "") {
-                time = moment(timeString.replace('.', '-') + ' 21:00:00.000').utcOffset(0).toISOString();
-            }
+                for(var i = 0; i < Time_Type_Kor.length; i++) {
+                    var timeIndex = timeString.indexOf(Time_Type_Kor[i]);
 
-            returnArray[index] = {
-                "src": src,
-                "title": title,
-                "summary": summary,
-                "posted": time,
-                "url": url
-            }
+                    if(timeIndex != -1) {
+                        if(i == 0) {
+                            timeString = 0;
+                        }
+                        else {
+                            timeString = timeString.substring(0, timeIndex);
+                            time = moment().add(-1 * timeString, Time_Type[i]);
+                        }
 
-            itemProcessed++;
-            console.log('(Processing) ' + itemProcessed + " of " + itemNumber);
+                        break;
+                    }
+                }
 
-            if(itemProcessed = itemNumber) {
-                console.log("(Processing)Done!");
-                callback(returnArray);
-                console.log("(News_Naver)End of module");
-            }
-	    });
+                if (time == "") {
+                    time = moment(timeString.replace(/./g, '-'));
+                }
+
+                time = time.utcOffset(0).add(-9, 'h').format();
+
+                returnArray[index] = {
+                    "src": src,
+                    "title": title,
+                    "summary": summary,
+                    "posted": time,
+                    "url": url
+                }
+
+                itemProcessed++;
+                //console.log('(Processing) ' + itemProcessed + " of " + itemNumber);
+
+                if(itemProcessed == itemNumber) {
+                    //console.log("(Processing)Done!");
+                    callback(returnArray);
+                    console.log("(News_Naver)End of crawling " + keyword);
+                }
+            });
+        }
     });
 }
 

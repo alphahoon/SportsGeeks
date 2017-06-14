@@ -185,3 +185,4 @@ function crawl(){
   */
 }
 module.exports = crawl
+crawl()

@@ -1427,7 +1427,7 @@ const teams = [
     {
         "id": "PSG",
         "type": "team",
-        "league": "",
+        "league": "Ligue1",
         "name": {
             "en": "Paris Saint-Germain",
             "kr": "파리 생제르맹"
@@ -1690,11 +1690,25 @@ const teams = [
         },
         "img": "teams/Bastia.png"
     },
+    {
+        "id": "Troyes",
+        "type": "team",
+        "league": "Ligue1",
+        "name": {
+            "en": "Troyes AC",
+            "kr": "트루아 AC"
+        },
+        "alias": {
+            "en": "Troyes",
+            "kr": "트루아"
+        },
+        "img": "teams/Troyes.png"
+    },
 
     // MLS
     // Wetstern Conference
     {
-        "id": "ColoradoRapids"
+        "id": "ColoradoRapids",
         "type": "team",
         "league": "MLS",
         "name": {

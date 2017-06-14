@@ -22,8 +22,8 @@ function crawl(){
         else{
           var t=i+1
         }
-        request("http://www.espnfc.com/italian-serie-a/12/scores?date=201705"+t, function(error, response, body) {
-          console.log('request is '+"http://www.espnfc.com/italian-serie-a/12/scores?date=201705"+t);
+        request("http://www.espnfc.com/major-league-soccer/19/scores?date=201706"+t, function(error, response, body) {
+          console.log('request is '+"http://www.espnfc.com/major-league-soccer/19/scores?date=201706"+t);
           if(error) {
             console.log("Error: " + error);
           }
@@ -53,67 +53,74 @@ function crawl(){
                 var sscore = scores[k].split('\n\t\t\t\t\t\n');
                 for(j=0; j<tteam.length; j++){
                   //console.log(tteam[j].trim());
+                  //console.log(sscore[j].trim());
                   var t1 = ''
                   switch(tteam[j].trim()){
-                    case 'Atalanta':
-                      t1 = 'Atalanta'
+                    case 'Colorado Rapids':
+                      t1 = 'ColoradoRapids'
                       break;
-                    case 'Bologna':
-                      t1 = 'Bologna'
+                    case 'FC Dallas':
+                      t1 = 'FCDallas'
                       break;
-                    case 'Cagliari':
-                      t1 = 'Cagliari'
+                    case 'Houston Dynamo':
+                      t1 = 'HoustonDynamo'
                       break;
-                    case 'Chievo Verona':
-                      t1 = 'Chievo'
+                    case 'LA Galaxy':
+                      t1 = 'LAGalaxy'
                       break;
-                    case 'Crotone':
-                      t1 = 'Crotone'
+                    case 'Minnesota United FC':
+                      t1 = 'MinnesotaUtd'
                       break;
-                    case 'Empoli':
-                      t1 = 'Empoli'
+                    case 'Portland Timbers':
+                      t1 = 'PortlandTimbers'
                       break;
-                    case 'Fiorentina':
-                      t1 = 'Fiorentina'
+                    case 'Real Salt Lake':
+                      t1 = 'RSL'
                       break;
-                    case 'Genoa':
-                      t1 = 'Genoa'
+                    case 'San Jose Earthquakes':
+                      t1 = 'SanJose'
                       break;
-                    case 'Internazionale':
-                      t1 = 'Inter'
+                    case 'Seattle Sounders FC':
+                      t1 = 'SeattleSounders'
                       break;
-                    case 'Juventus':
-                      t1 = 'Juventus'
+                    case 'Sporting Kansas City':
+                      t1 = 'SportingKansas'
                       break;
-                    case 'Lazio':
-                      t1 = 'Lazio'
+                    case 'Vancouver Whitecaps':
+                      t1 = 'Whitecaps'
                       break;
-                    case 'AC Milan':
-                      t1 = 'Milan'
+                    case 'Atlanta United FC':
+                      t1 = 'AtlantaUtd'
                       break;
-                    case 'Napoli':
-                      t1 = 'Napoli'
+                    case 'Chicago Fire':
+                      t1 = 'ChicagoFire'
                       break;
-                    case 'Palermo':
-                      t1 = 'Palermo'
+                    case 'Columbus Crew SC':
+                      t1 = 'ColumbusCrew'
                       break;
-                    case 'US Pescara':
-                      t1 = 'Pescara'
+                    case 'DC United':
+                      t1 = 'DCUtd'
                       break;
-                    case 'AS Roma':
-                      t1 = 'Roma'
+                    case 'Montreal Impact':
+                      t1 = 'MontrealImpact'
                       break;
-                    case 'Sampdoria':
-                      t1 = 'Sampdoria'
+                    case 'New England Revolution':
+                      t1 = 'NewEngland'
                       break;
-                    case 'Sassuolo':
-                      t1 = 'Sasuuolo'
+                    case 'New York City FC':
+                      t1 = 'NewYorkFC'
                       break;
-                    case 'Torino':
-                      t1 = 'Torino'
+                    case 'New York Red Bulls':
+                      t1 = 'NewYorkRedBulls'
                       break;
-                    case 'Udinese':
-                      t1 = 'Udinese'
+                    case 'Orlando City SC':
+                      t1 = 'OrlandoSC'
+                      break;
+                    case 'Philadelphia Union':
+                      t1 = 'PhiladelphiaUnion'
+                      break;
+                    case 'Toronto FC':
+                      t1 = 'TorontoFC'
                       break;
                   }
 
@@ -122,15 +129,23 @@ function crawl(){
                     scoretemp = sscore[j].trim();
                   }
                   else{
+                    var done1 = true;
+                    var s1 = scoretemp
+                    var s2 = sscore[j].trim()
+                    if(scoretemp == ''){
+                      s1 = null;
+                      s2 = null;
+                      done1 = false;
+                    }
                     objArr.push({
                       sport: "Soccer",
-                      league: "SerieA",
+                      league: "MLS",
                       teamA: teamtemp,
                       teamB: t1,
-                      done: true, // Default: "false"
-                      scoreA: scoretemp, // Default: "N/A"
-                      scoreB: sscore[j].trim(), // Default: "N/A"
-                      datetime: moment('2017-05-'+dates[k], 'YYYY-MM-DD').utcOffset(0).add("hours", 9).format(),
+                      done: done1, // Default: "false"
+                      scoreA: s1, // Default: "N/A"
+                      scoreB: s2, // Default: "N/A"
+                      datetime: moment('2017-06-'+dates[k], 'YYYY-MM-DD').utcOffset(0).add("hours", 9).format(),
                       update: moment().utcOffset(0).format()
                     });
                   }
