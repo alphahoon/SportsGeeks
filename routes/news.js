@@ -4,15 +4,15 @@ const router = express.Router();
 router.post('/', (req, res, next) => {
     const db = req.app.get('db');
     const bodyObj = req.app.get('bodyObj');
-    const standings = db.get('standings');
+    const news = db.get('news');
 
     var json = {};
-    standings.findOne({
+    news.findOne({
             team: bodyObj.team
         })
         .then((data) => {
             json.status = 'OK';
-            json.articles = data.articles;
+            json.articles = data.article;
             res.json(json);
         })
         .catch((err) => {
