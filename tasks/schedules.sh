@@ -1,5 +1,5 @@
 #! /bin/bash
 
-# Trends Update
-# node ../crawler/schedules.js
-
+# Schedule updated
+node ../crawler/schedules.js
+node ../crawler/standings.js

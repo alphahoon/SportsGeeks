@@ -4,4 +4,4 @@
 ./keywords.sh
 ./schedules.sh
 ./news.sh
-#./tasks/trends.sh
+./trends.sh

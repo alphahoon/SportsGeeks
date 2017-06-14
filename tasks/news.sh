@@ -1,5 +1,4 @@
 #! /bin/bash
 
 # Trends Update
-# node ../crawler/news.js
-
+node ../crawler/News.js
