@@ -7,7 +7,7 @@ router.post('/', (req, res, next) => {
     const standings = db.get('standings');
 
     var json = {};
-    standings.find({
+    standings.findOne({
             team: bodyObj.team
         })
         .then((data) => {
