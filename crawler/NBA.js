@@ -81,7 +81,7 @@ function crawl(){
                 t1 = 'TorontoRaptors';
                 break;
               case '시카고':
-                t1 = 'ClevelandCavaliers';
+                t1 = 'ChicagoBulls';
                 break;
               case '디트로이트':
                 t1 = 'DetroitPistons';
@@ -173,7 +173,7 @@ function crawl(){
                 t2 = 'TorontoRaptors';
                 break;
               case '시카고':
-                t2 = 'ClevelandCavaliers';
+                t2 = 'ChicagoBulls';
                 break;
               case '디트로이트':
                 t2 = 'DetroitPistons';
